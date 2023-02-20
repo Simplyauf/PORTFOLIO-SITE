@@ -3,7 +3,7 @@ import { BsWhatsapp, BsShieldPlus } from "react-icons/bs";
 
 const HeroSection = () => {
   return (
-    <section className="flex justify-center items-center mt-16 w-full  px-[6%]">
+    <section className="flex justify-center items-center mt-16 w-full mt-20 py-20 px-[6%]">
       <div className=" flex flex-col  justify-center items-center">
         <p className="text-lg font-medium">Hello my name is</p>
         <h1 className="text-[3.25rem] text-center leading-[130%] font-bold ">Azeez Umar Faruq</h1>

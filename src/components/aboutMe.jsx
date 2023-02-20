@@ -1,6 +1,6 @@
 export const AboutMe = () => {
   return (
-    <section className="w-full px-[6%] mt-20 pt-20 skew-y-[-5deg] bg-[hsl(0,0%,96%)]">
+    <section className="w-full px-[6%] mt-20 py-20 skew-y-[-5deg] bg-[hsl(0,0%,96%)]">
       <div className="skew-y-[5deg]  w-full px-[2%] py-20 ">
         <h2 className="font-bold text-2xl ">About Me</h2>
         <p className="leading-[140%] mt-16">
