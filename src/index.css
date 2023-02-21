@@ -2,8 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  li {
+    @apply cursor-pointer;
+  }
+}
 @layer utilities {
   input {
     @apply border-darkSecondaryColor;
+  }
+
+  .skillsIcon-container:hover svg,
+  .skillsIcon-container:hover h3 {
+    @apply text-primaryColor transition-colors duration-150 ease-in-out;
+  }
+
+  .skillsIcon-container:hover {
+    @apply border-primaryColor cursor-pointer transition-colors duration-150 ease-in-out;
   }
 }

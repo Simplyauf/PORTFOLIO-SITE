@@ -17,9 +17,8 @@ export const Skills = () => {
   };
 
   const ToolContainer = ({ children, toolName }) => {
-    console.log(children);
     return (
-      <div className="flex flex-col min-h-[140px] min-w-[99px] basis-[31%] max-w-[100px] border border-neutralColor p-3 items-center justify-center gap-4">
+      <div className="flex flex-col min-h-[140px] min-w-[99px] basis-[31%] max-w-[100px] border border-darkSecondaryColor rounded-sm p-3 items-center hover: justify-center gap-4 skillsIcon-container">
         {children}
         <h3 className="font-medium">{toolName}</h3>
       </div>
@@ -30,7 +29,7 @@ export const Skills = () => {
     <section className="w-full px-[6%] mt-20 py-20 skew-y-[-5deg]">
       <div className="skew-y-[5deg]  w-full ">
         <h2 className="font-bold text-2xl ">My Skills</h2>
-        <div className="flex items-center gap-x-[2%] gap-y-[8px] flex-wrap mt-16">
+        <div className="flex items-center justify-center gap-x-[3%] gap-y-[8px] flex-wrap mt-16">
           {Object.keys(tools).map((elem, index) => {
             return (
               <ToolContainer toolName={elem} key={index}>
