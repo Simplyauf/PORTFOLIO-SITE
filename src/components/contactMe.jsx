@@ -1,7 +1,38 @@
+import { validateEmail } from "../utils/emailRegexValidation";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+
 export const ContactMe = () => {
+  const formRef = useRef();
+
+  const sendMessage = async (e) => {
+    e.preventDefault();
+
+    let gmailInputDOM = e.currentTarget.querySelector("input[type='email']");
+
+    if (!validateEmail(gmailInputDOM.value)) {
+      gmailInputDOM.nextElementSibling.style.display = "block";
+    } else {
+      emailjs.sendForm("auf_gmail", "auf_template", formRef.current, "2r3r5or96z83ZOCJF").then(
+        (result) => {
+          // clear input upon success
+          formRef.current.reset();
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+    }
+  };
+
   return (
-    <section className="flex justify-center items-center mt-16 w-full mt-20 py-20  px-[6%]">
-      <form action="" className=" max-w-[360px] flex flex-col gap-4   w-full py-20">
+    <section className="flex justify-center items-center mt-16 w-full  py-20  px-[6%]">
+      <form
+        action=""
+        className=" max-w-[360px] flex flex-col gap-4   w-full py-20"
+        onSubmit={sendMessage}
+        ref={formRef}
+      >
         <h2 className="font-bold text-2xl mb-16">Contact Me</h2>
         <p className="mb-4">
           Submit the form below or send an email to <b>azeezumarfaruk@gmail.com</b>
@@ -9,20 +40,40 @@ export const ContactMe = () => {
         <div>
           <label htmlFor="">
             Name
-            <input type="text" name="" className="border pl-4 focus:outline-none rounded w-full mt-2 h-[52px]" id="" />
+            <input
+              type="text"
+              name="user_name"
+              required
+              className="border pl-4 focus:outline-none rounded w-full mt-2 h-[52px]"
+              id=""
+            />
           </label>
         </div>
         <div>
           <label htmlFor="">
             Email
-            <input type="text" name="" className="border pl-4 focus:outline-none rounded w-full mt-2 h-[52px]" id="" />
+            <input
+              type="email"
+              name="user_email"
+              required
+              className="border pl-4 focus:outline-none rounded w-full mt-2 h-[52px]"
+              id=""
+              onChange={(e) => {
+                // on validation,make the email error text disappear
+                if (validateEmail(e.target.value)) {
+                  e.target.nextElementSibling.style.display = "none";
+                }
+              }}
+            />
+            <span className="italic mt-1 font-bold text-primaryColor hidden">Please provide a valid email Address</span>
           </label>
         </div>
         <div>
           <label htmlFor="">Message</label>
           <textarea
-            className="border p-4 focus:outline-none mt-2 border- rounded w-full"
-            name=""
+            required
+            className="border resize-none border-darkSecondaryColor  p-4 focus:outline-none mt-2 border- rounded w-full"
+            name="message"
             id=""
             cols="30"
             rows="10"
@@ -30,7 +81,7 @@ export const ContactMe = () => {
         </div>
         <button
           type="submit"
-          className="my-4 w-[100%] mx-auto block h-[52px] bg-primaryColor text-white cursor-none font-medium rounded"
+          className="my-4 w-[100%] mx-auto block h-[52px] bg-primaryColor text-white cursor-pointer font-medium rounded"
         >
           Send message
         </button>
