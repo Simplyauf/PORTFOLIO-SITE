@@ -26,10 +26,10 @@ export const Skills = () => {
   };
 
   return (
-    <section className="w-full px-[6%] mt-20 py-20 skew-y-[-5deg]">
-      <div className="skew-y-[5deg]  w-full ">
+    <section className="w-full px-[6%] py-20">
+      <div className=" w-full my-20">
         <h2 className="font-bold text-2xl ">My Skills</h2>
-        <div className="flex items-center justify-center gap-x-[3%] gap-y-[8px] flex-wrap mt-16">
+        <div className="flex items-center justify-center gap-x-[3%] gap-4 flex-wrap mt-16">
           {Object.keys(tools).map((elem, index) => {
             return (
               <ToolContainer toolName={elem} key={index}>

@@ -13,7 +13,9 @@ const HeroSection = () => {
         </p>
         <div className="flex gap-4 mt-8">
           <button className="h-12 w-[120px] bg-primaryColor text-white rounded">Resume</button>
-          <button className="h-12 w-[120px] bg-transparent border-primaryColor border-2 rounded">Contact Me</button>
+          <button className="h-12 w-[120px] bg-transparent border-primaryColor border-2 text-primaryColor rounded">
+            Contact Me
+          </button>
         </div>
         <div className="mt-8">
           <h2 className="text-xl font-bold text-center">Lets connect</h2>

@@ -17,7 +17,7 @@ function App() {
       <Skills />
       <Projects />
       <ContactMe />
-      <footer className="bg-[hsl(0,0%,96%)] w-full py-20 px-[6%]">
+      <footer className="w-full px-[6%]  py-20 bg-[hsl(0,0%,96%)] ">
         <p className="text-lg">&copy; Abdulazeez umarfaruq, {new Date().getFullYear()}. All rights reserved</p>
       </footer>
     </div>
