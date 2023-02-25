@@ -29,6 +29,7 @@ export const Skills = () => {
     <section className="w-full px-[6%] py-20">
       <div className=" w-full my-20">
         <h2 className="font-bold text-2xl ">My Skills</h2>
+        <div className="bg-primaryColor -skew-x-6 h-2 w-[60px]"></div>
         <div className="flex items-center justify-center gap-x-[3%] gap-4 flex-wrap mt-16">
           {Object.keys(tools).map((elem, index) => {
             return (

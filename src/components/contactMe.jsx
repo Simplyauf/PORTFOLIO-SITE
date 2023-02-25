@@ -33,8 +33,15 @@ export const ContactMe = () => {
         onSubmit={sendMessage}
         ref={formRef}
       >
-        <h2 className="font-bold text-2xl mb-16">Contact Me</h2>
-        <p className="mb-4">
+        <div>
+          {" "}
+          <h2 className="font-bold text-2xl relative before:h-2 before:w-[80px] before:absolute before:left-0 before:translate-y-0">
+            Contact Me
+          </h2>
+          <div className="bg-primaryColor h-2 w-[60px] -skew-x-6"></div>
+        </div>
+
+        <p className="mb-4  mt-16">
           Submit the form below or send an email to <b>azeezumarfaruk@gmail.com</b>
         </p>
         <div>

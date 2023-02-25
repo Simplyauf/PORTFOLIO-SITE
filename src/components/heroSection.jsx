@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className=" flex flex-col  justify-center items-center">
         <p className="text-lg font-medium">Hello my name is</p>
         <h1 className="text-[3.25rem] text-center leading-[130%] font-bold ">Azeez Umar Faruq</h1>
-        <h3 className="text-2xl mt-7 font-bold">Frontend Developer</h3>
+        <h3 className="text-2xl mt-7 font-bold gradientText">Frontend Developer</h3>
         <p className="text-lg font-medium mt-1 text-center">
           Passionate about building responsive and user-friendly web applications
         </p>

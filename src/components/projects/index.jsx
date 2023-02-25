@@ -3,7 +3,7 @@ export const Projects = () => {
     <section className="w-full px-[6%] mt-20 py-20  after relative before:absolute before:left-0 before:origin-top before:bg-inherit before:skew-y-[4deg] skew-y-[-4deg] before:w-full before:h-[160px] before:-z-10 before:-bottom-[80px] bg-[hsl(0,0%,96%)]">
       <div className="skew-y-[4deg]  w-full px-[2%] pt-20">
         <h2 className="font-bold text-2xl ">My Projects</h2>
-        <div className="bg-primaryColor skew-y-4 h-2 w-[60px]"></div>
+        <div className=" bg-primaryColor -skew-x-6 h-2 w-[60px]"></div>
         <div className="flex flex-wrap flex-col mt-16 gap-6">
           <article className="w-full  flex flex-col gap-4  p-8 rounded bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]">
             <img
