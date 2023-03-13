@@ -18,7 +18,7 @@ export const Skills = () => {
 
   const ToolContainer = ({ children, toolName }) => {
     return (
-      <div className="flex flex-col min-h-[140px] min-w-[99px] basis-[31%] max-w-[100px] border border-darkSecondaryColor rounded-sm p-3 items-center hover: justify-center gap-4 skillsIcon-container">
+      <div className="flex flex-col min-h-[140px] min-w-[99px] basis-[32%] max-w-[100px] sm:max-w-[120px] border border-darkSecondaryColor rounded p-3 items-center hover: justify-center gap-4 skillsIcon-container">
         {children}
         <h3 className="font-medium">{toolName}</h3>
       </div>
@@ -26,7 +26,7 @@ export const Skills = () => {
   };
 
   return (
-    <section className="w-full px-[6%] py-20">
+    <section className="w-full px-[6%] py-20 md:px-[10rem] lg:px-[10rem]">
       <div className=" w-full my-20">
         <h2 className="font-bold text-2xl ">My Skills</h2>
         <div className="bg-primaryColor -skew-x-6 h-2 w-[60px]"></div>

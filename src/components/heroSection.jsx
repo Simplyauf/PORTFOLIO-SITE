@@ -1,32 +1,179 @@
 import { FiInstagram, FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
-import { BsWhatsapp, BsShieldPlus } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const HeroSection = () => {
+  // gradient text  //role part
+  const gradientVariants = {
+    initial: {
+      backgroundImage: "linear-gradient(90deg,#f56a6a , #000 )",
+      transition: {
+        duration: 0.1,
+      },
+    },
+    animate: {
+      backgroundImage: "linear-gradient(90deg, #000 , #f56a6a )",
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    },
+  };
+
+  const expandAndFadeOutTextVariant = {
+    initial: {
+      letterSpacing: "-0.5em",
+      translateZ: "-800px",
+      filter: "blur(12px)",
+      transition: {
+        duration: 0.1,
+      },
+    },
+    animate: {
+      opacity: 1,
+      letterSpacing: "0em",
+      translateZ: "0",
+      filter: "blur(0)",
+      transition: { ease: [0.25, 0.46, 0.45, 0.94], duration: 1 },
+    },
+  };
+
+  const fadeOutMoveUpVariants = {
+    initial: { y: 30, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
+  // framer animation for  when specific elements are  in view
+  const refFadeOut = useRef(null);
+  const inViewFadeOut = useInView(refFadeOut);
+
+  const refExpandText = useRef(null);
+  const inViewExpandText = useInView(refExpandText);
+
+  const refGradient = useRef(null);
+  const inViewGradient = useInView(refGradient);
+
+  const controlsFadeOut = useAnimation();
+  const controlsExpand = useAnimation();
+  const controlsGradient = useAnimation();
+
+  useEffect(() => {
+    if (inViewFadeOut) {
+      controlsFadeOut.start({ y: 0, opacity: 1, transition: { duration: 1, ease: "easeOut" } });
+    } else {
+      controlsFadeOut.start({ y: 30, opacity: 0 });
+    }
+  }, [inViewFadeOut]);
+
+  // expand
+  useEffect(() => {
+    console.log(inViewExpandText);
+    let AnimateWhileInview = async () => {
+      await controlsExpand.start("initial");
+      await controlsExpand.start({ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } });
+
+      await controlsExpand.start("animate");
+    };
+
+    if (inViewExpandText) {
+      AnimateWhileInview();
+    } else {
+      controlsExpand.start({ y: 30, opacity: 0 });
+    }
+  }, [inViewExpandText, controlsExpand]);
+
+  // gradient text
+  useEffect(() => {
+    let AnimateGradientTextInview = async () => {
+      await controlsGradient.start("initial");
+      await controlsGradient.start({ y: 0, opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } });
+
+      await controlsGradient.start("animate");
+    };
+
+    if (inViewGradient) {
+      AnimateGradientTextInview();
+    } else {
+      controlsGradient.start({ y: 30, opacity: 0 });
+    }
+  }, [inViewGradient, controlsGradient]);
+
   return (
-    <section className="flex justify-center items-center mt-[calc(80px+5rem)] w-full  pb-20 px-[6%]">
+    <section className="flex md:px-[10rem] lg:px-[10rem] justify-center items-center mt-[calc(80px+5rem)] md:mt-[5rem] w-full  pb-20 px-[6%]">
       <div className=" flex flex-col  justify-center items-center">
-        <p className="text-lg font-medium">Hello my name is</p>
-        <h1 className="text-[3.25rem] text-center leading-[130%] font-bold ">Azeez Umar Faruq</h1>
-        <h3 className="text-2xl mt-7 font-bold gradientText">Frontend Developer</h3>
-        <p className="text-lg font-medium mt-1 text-center">
+        <motion.p
+          ref={refFadeOut}
+          variants={fadeOutMoveUpVariants}
+          initial="initial"
+          animate={controlsFadeOut}
+          className="text-lg font-medium xl:text-lg"
+        >
+          Hello my name is
+        </motion.p>
+        <motion.h1
+          ref={refExpandText}
+          initial="initial"
+          animate={controlsExpand}
+          variants={expandAndFadeOutTextVariant}
+          className="text-[3rem] md:text-[3.5rem] xl:text-[4rem] md:leading-[130%] opacity-0  text-center leading-[120%] font-bold "
+        >
+          Azeez Umar Faruq
+        </motion.h1>
+        <motion.h3
+          ref={refGradient}
+          initial="initial"
+          animate={controlsGradient}
+          variants={gradientVariants}
+          className="text-2xl md:text-3xl xl:text-4xl mt-7 font-bold gradientText  opacity-0"
+        >
+          Frontend Developer
+        </motion.h3>
+        <motion.p
+          ref={refFadeOut}
+          variants={fadeOutMoveUpVariants}
+          initial="initial"
+          animate={controlsFadeOut}
+          className="text-lg font-medium mt-2 text-center xl:text-xl"
+        >
           Passionate about building responsive and user-friendly web applications
-        </p>
-        <div className="flex gap-4 mt-8">
-          <button className="h-12 w-[120px] bg-primaryColor text-white rounded">Resume</button>
-          <button className="h-12 w-[120px] bg-transparent border-primaryColor border-2 text-primaryColor rounded">
-            Contact Me
+        </motion.p>
+        <motion.div
+          ref={refFadeOut}
+          variants={fadeOutMoveUpVariants}
+          initial="initial"
+          animate={controlsFadeOut}
+          className="flex gap-4 mt-8"
+        >
+          <button className="h-12 w-[120px] bg-primaryColor text-white rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+            Resume
           </button>
-        </div>
-        <div className="mt-8">
+          <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2  overflow-hidden  rounded">
+            <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+            <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+              {" "}
+              Contact Me
+            </span>
+          </button>
+        </motion.div>
+        <motion.div
+          ref={refFadeOut}
+          variants={fadeOutMoveUpVariants}
+          initial="initial"
+          animate={controlsFadeOut}
+          className="mt-8"
+        >
           <h2 className="text-xl font-bold text-center">Lets connect</h2>
           <div className="flex justify-center items-center gap-4 mt-4">
-            <FiTwitter className="w-6 h-6 " />
-            <FiInstagram className="w-6 h-6 " />
-            <FiGithub className="w-6 h-6 " />
-            <BsWhatsapp className="w-6 h-6 " />
-            <FiLinkedin className="w-6 h-6 " />
+            <FiTwitter className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
+            <FiInstagram className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
+            <FiGithub className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
+            <BsWhatsapp className="w-6 h-6 cursor-pointer hover:fillprimaryColor transition-colors ease-in duration-200" />
+            <FiLinkedin className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

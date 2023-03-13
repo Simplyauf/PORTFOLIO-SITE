@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { AboutMe } from "./components/aboutMe";
 import { ContactMe } from "./components/contactMe";
+import { Footer } from "./components/footer";
 import Header from "./components/header";
 import HeroSection from "./components/heroSection";
 import { Projects } from "./components/projects";
@@ -17,9 +18,7 @@ function App() {
       <Skills />
       <Projects />
       <ContactMe />
-      <footer className="w-full px-[6%]  py-20 bg-[hsl(0,0%,96%)] ">
-        <p className="text-lg">&copy; Abdulazeez umarfaruq, {new Date().getFullYear()}. All rights reserved</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

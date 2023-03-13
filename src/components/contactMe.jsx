@@ -26,7 +26,7 @@ export const ContactMe = () => {
   };
 
   return (
-    <section className="flex justify-center items-center mt-16 w-full  py-20  px-[6%]">
+    <section className="flex justify-center items-center mt-16 w-full md:px-[10rem] lg:px-[10rem]   py-20  px-[6%]">
       <form
         action=""
         className=" max-w-[360px] flex flex-col gap-4   w-full py-20"
@@ -88,7 +88,7 @@ export const ContactMe = () => {
         </div>
         <button
           type="submit"
-          className="my-4 w-[100%] mx-auto block h-[52px] bg-primaryColor text-white cursor-pointer font-medium rounded"
+          className="my-4 w-[100%] mx-auto block h-[52px] bg-primaryColor text-white cursor-pointer font-medium rounded hover:bg-[hsl(0deg,87%,65%)] transition-colors"
         >
           Send message
         </button>

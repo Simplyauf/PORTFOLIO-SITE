@@ -26,12 +26,12 @@ const Header = () => {
   return (
     <>
       <header
-        className={` w-full ${
+        className={`md:px-[10rem] md:flex md:justify-between lg:px-[10rem] w-full ${
           !openHamBurgerBar && "shadow-[0_10px_10px_-10px_rgba(0,0,0,0.2)] sm:shadow-none bottom-2"
-        } z-[100] top-0  fixed bg-white`}
+        } z-[100] top-0  fixed bg-white md:relative`}
       >
-        <div className="flex justify-between items-center py-6 h-[80px] w-full  px-[6%]">
-          <h2 className="text-2xl font-bold">Auf</h2>
+        <div className="flex justify-between items-center py-6 h-[80px] md:h-[120px] md:py-0 w-full  px-[6%] lg:px-0">
+          <h2 className="text-2xl font-bold md:text-3xl">Auf</h2>
           {openHamBurgerBar ? (
             <RxHamburgerMenu
               className="w-8 h-8 sm:hidden cursor-pointer"
