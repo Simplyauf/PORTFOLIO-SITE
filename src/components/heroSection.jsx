@@ -6,6 +6,10 @@ import { useEffect, useRef } from "react";
 const HeroSection = () => {
   // gradient text  //role part
   const gradientVariants = {
+    notInView: {
+      y: 30,
+      opacity: 0,
+    },
     initial: {
       backgroundImage: "linear-gradient(90deg,#f56a6a , #000 )",
       transition: {
@@ -24,6 +28,10 @@ const HeroSection = () => {
   };
 
   const expandAndFadeOutTextVariant = {
+    notInView: {
+      y: 30,
+      opacity: 0,
+    },
     initial: {
       letterSpacing: "-0.5em",
       translateZ: "-800px",
@@ -33,7 +41,6 @@ const HeroSection = () => {
       },
     },
     animate: {
-      opacity: 1,
       letterSpacing: "0em",
       translateZ: "0",
       filter: "blur(0)",
@@ -62,7 +69,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     if (inViewFadeOut) {
-      controlsFadeOut.start({ y: 0, opacity: 1, transition: { duration: 1, ease: "easeOut" } });
+      controlsFadeOut.start({ y: 0, opacity: 1, transition: { duration: 2, ease: "easeOut" } });
     } else {
       controlsFadeOut.start({ y: 30, opacity: 0 });
     }
@@ -102,49 +109,49 @@ const HeroSection = () => {
   }, [inViewGradient, controlsGradient]);
 
   return (
-    <section className="flex md:px-[10rem] lg:px-[10rem] justify-center items-center mt-[calc(80px+5rem)] md:mt-[5rem] w-full  pb-20 px-[6%]">
+    <section className="flex md:px-[5rem] lg:px-[10rem] justify-center items-center mt-[calc(80px+5rem)] md:mt-[5rem] w-full  pb-20 px-[6%]">
       <div className=" flex flex-col  justify-center items-center">
         <motion.p
           ref={refFadeOut}
-          variants={fadeOutMoveUpVariants}
           initial="initial"
           animate={controlsFadeOut}
+          variants={fadeOutMoveUpVariants}
           className="text-lg font-medium xl:text-lg"
         >
           Hello my name is
         </motion.p>
         <motion.h1
           ref={refExpandText}
-          initial="initial"
+          initial="notInView"
           animate={controlsExpand}
           variants={expandAndFadeOutTextVariant}
-          className="text-[3rem] md:text-[3.5rem] xl:text-[4rem] md:leading-[130%] opacity-0  text-center leading-[120%] font-bold "
+          className="text-[3rem] md:text-[3.5rem] xl:text-[4rem] md:leading-[130%]  text-center leading-[120%] font-bold "
         >
           Azeez Umar Faruq
         </motion.h1>
         <motion.h3
           ref={refGradient}
-          initial="initial"
+          initial="notInView"
           animate={controlsGradient}
           variants={gradientVariants}
-          className="text-2xl md:text-3xl xl:text-4xl mt-7 font-bold gradientText  opacity-0"
+          className="text-2xl md:text-3xl xl:text-4xl mt-7 font-bold gradientText "
         >
           Frontend Developer
         </motion.h3>
         <motion.p
           ref={refFadeOut}
-          variants={fadeOutMoveUpVariants}
           initial="initial"
           animate={controlsFadeOut}
+          variants={fadeOutMoveUpVariants}
           className="text-lg font-medium mt-2 text-center xl:text-xl"
         >
           Passionate about building responsive and user-friendly web applications
         </motion.p>
         <motion.div
           ref={refFadeOut}
-          variants={fadeOutMoveUpVariants}
           initial="initial"
           animate={controlsFadeOut}
+          variants={fadeOutMoveUpVariants}
           className="flex gap-4 mt-8"
         >
           <button className="h-12 w-[120px] bg-primaryColor text-white rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
@@ -160,9 +167,9 @@ const HeroSection = () => {
         </motion.div>
         <motion.div
           ref={refFadeOut}
-          variants={fadeOutMoveUpVariants}
           initial="initial"
           animate={controlsFadeOut}
+          variants={fadeOutMoveUpVariants}
           className="mt-8"
         >
           <h2 className="text-xl font-bold text-center">Lets connect</h2>
@@ -170,7 +177,7 @@ const HeroSection = () => {
             <FiTwitter className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
             <FiInstagram className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
             <FiGithub className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
-            <BsWhatsapp className="w-6 h-6 cursor-pointer hover:fillprimaryColor transition-colors ease-in duration-200" />
+            <BsWhatsapp className="w-6 h-6 cursor-pointer hover:fill-primaryColor transition-colors ease-in duration-200" />
             <FiLinkedin className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
           </div>
         </motion.div>

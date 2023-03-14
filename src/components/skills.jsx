@@ -1,6 +1,7 @@
 import { DiJavascript1, DiMongodb, DiReact, DiNodejs, DiHtml5, DiCss3, DiGit } from "react-icons/di";
 import { RxFramerLogo } from "react-icons/rx";
 import { SiTailwindcss, SiRedux, SiExpress } from "react-icons/si";
+import { motion } from "framer-motion";
 
 export const Skills = () => {
   const tools = {
@@ -18,19 +19,22 @@ export const Skills = () => {
 
   const ToolContainer = ({ children, toolName }) => {
     return (
-      <div className="flex flex-col min-h-[140px] min-w-[99px] basis-[32%] max-w-[100px] sm:max-w-[120px] border border-darkSecondaryColor rounded p-3 items-center hover: justify-center gap-4 skillsIcon-container">
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        className="flex flex-col min-h-[140px] min-w-[99px] basis-[32%] max-w-[100px] sm:max-w-[120px] border border-darkSecondaryColor rounded p-3 items-center hover: justify-center gap-4 skillsIcon-container"
+      >
         {children}
         <h3 className="font-medium">{toolName}</h3>
-      </div>
+      </motion.div>
     );
   };
 
   return (
-    <section className="w-full px-[6%] py-20 md:px-[10rem] lg:px-[10rem]">
+    <section className="w-full px-[6%] py-20 md:px-[5rem] lg:px-[10rem]">
       <div className=" w-full my-20">
         <h2 className="font-bold text-2xl ">My Skills</h2>
-        <div className="bg-primaryColor -skew-x-6 h-2 w-[60px]"></div>
-        <div className="flex items-center justify-center gap-x-[3%] gap-4 flex-wrap mt-16">
+        <div className="bg-primaryColor -skew-x-6  w-[60px]  h-[10px] mt-[4px] "></div>
+        <div className="flex items-center justify-center gap-4 flex-wrap mt-16">
           {Object.keys(tools).map((elem, index) => {
             return (
               <ToolContainer toolName={elem} key={index}>

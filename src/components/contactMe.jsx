@@ -26,7 +26,7 @@ export const ContactMe = () => {
   };
 
   return (
-    <section className="flex justify-center items-center mt-16 w-full md:px-[10rem] lg:px-[10rem]   py-20  px-[6%]">
+    <section className="flex justify-center items-center mt-16 w-full md:px-[5rem] lg:px-[10rem]   py-20  px-[6%]">
       <form
         action=""
         className=" max-w-[360px] flex flex-col gap-4   w-full py-20"
@@ -35,14 +35,15 @@ export const ContactMe = () => {
       >
         <div>
           {" "}
-          <h2 className="font-bold text-2xl relative before:h-2 before:w-[80px] before:absolute before:left-0 before:translate-y-0">
+          <h2 className="font-bold text-2xl relative before:h-2 before:w-[80px] before:absolute before:left-0 before:translate-y-0 ">
             Contact Me
           </h2>
-          <div className="bg-primaryColor h-2 w-[60px] -skew-x-6"></div>
+          <div className="bg-primaryColor  h-[10px] mt-[4px]  w-[60px] -skew-x-6"></div>
         </div>
 
         <p className="mb-4  mt-16">
-          Submit the form below or send an email to <b>azeezumarfaruk@gmail.com</b>
+          Submit the form below or send an email to{" "}
+          <b className="gradientText cursor-pointer">azeezumarfaruk@gmail.com</b>
         </p>
         <div>
           <label htmlFor="">
