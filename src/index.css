@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   li {
     @apply cursor-pointer;
   }
@@ -14,15 +17,15 @@
 
   .skillsIcon-container:hover svg,
   .skillsIcon-container:hover h3 {
-    @apply text-primaryColor transition-colors duration-200 ease-in-out;
+    @apply transition-colors duration-200 ease-in-out;
   }
 
   .skillsIcon-container:hover {
-    @apply border-primaryColor cursor-pointer transition-colors duration-200 ease-in-out;
+    @apply cursor-pointer transition-colors duration-200 ease-in-out;
   }
 
   .gradientText {
-    background-image: linear-gradient(90deg, #f56a6a, black);
+    background-image: linear-gradient(360deg, #f56a6a, black);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

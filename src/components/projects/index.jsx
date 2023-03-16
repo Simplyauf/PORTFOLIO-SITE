@@ -1,14 +1,23 @@
+import { motion } from "framer-motion";
 import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 import { RiGithubFill } from "react-icons/ri";
 
 export const Projects = () => {
   return (
-    <section className="w-full px-[6%] md:px-[5rem] lg:px-[10rem] mt-20 py-20  after relative before:absolute before:left-0 before:origin-top before:bg-inherit before:skew-y-[4deg] skew-y-[-4deg] before:w-full before:h-[160px] before:-z-10 before:-bottom-[80px] bg-[hsl(0,0%,96%)]">
+    <section
+      id="projectSection"
+      className="w-full px-[6%] md:px-[5rem] lg:px-[10rem] mt-20 py-20  after relative before:absolute before:left-0 before:origin-top before:bg-inherit before:skew-y-[4deg] skew-y-[-4deg] before:w-full before:h-[160px] before:-z-10 before:-bottom-[80px] bg-[hsl(0,0%,96%)]"
+    >
       <div className="skew-y-[4deg]  w-full px-[2%] pt-20">
         <h2 className="font-bold text-2xl ">My Projects</h2>
         <div className=" bg-primaryColor -skew-x-6  h-[10px] mt-[4px] w-[60px]"></div>
-        <div className="flex flex-wrap flex-col md:flex-row mt-16 gap-6 items-center lg:justify-center md:items-stretch lg:gap-10 2xl:gap-12">
-          <article className="w-full  flex flex-col gap-4 max-w-[350px]  2xl:max-w-[378px]  3xl:max-w-[400px]  justify-evenly p-8 rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]">
+        <div className="flex flex-wrap flex-col md:flex-row mt-16 gap-6 items-center md:justify-center md:items-stretch lg:gap-10 2xl:gap-12">
+          <motion.article
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.93 }}
+            transition={{ ease: "easeInOut" }}
+            className="w-full cursor-pointer flex flex-col gap-4 max-w-[350px]  2xl:max-w-[378px]  3xl:max-w-[400px]  justify-evenly p-8 rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+          >
             <img
               className="max-w-full h-[150px]  justify-self-center rounded"
               src="https://sanjayloncha.netlify.app/static/media/Domino.d59842af7286460603ea.JPG"
@@ -38,7 +47,7 @@ export const Projects = () => {
                 <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
               </button>
             </div>
-          </article>
+          </motion.article>
           <article className="w-full  flex flex-col gap-4 justify-evenly  max-w-[350px] p-8 rounded-md bg-white  shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]">
             <img
               className="max-w-full h-[150px] justify-self-center rounded"

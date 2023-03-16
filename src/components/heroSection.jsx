@@ -2,6 +2,7 @@ import { FiInstagram, FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 const HeroSection = () => {
   // gradient text  //role part
@@ -109,7 +110,10 @@ const HeroSection = () => {
   }, [inViewGradient, controlsGradient]);
 
   return (
-    <section className="flex md:px-[5rem] lg:px-[10rem] justify-center items-center mt-[calc(80px+5rem)] md:mt-[5rem] w-full  pb-20 px-[6%]">
+    <section
+      id="heroSection"
+      className="flex md:px-[5rem] lg:px-[10rem] justify-center items-center mt-[calc(80px+5rem)] md:mt-[6rem] w-full  pb-20 px-[6%]"
+    >
       <div className=" flex flex-col  justify-center items-center">
         <motion.p
           ref={refFadeOut}
@@ -157,13 +161,15 @@ const HeroSection = () => {
           <button className="h-12 w-[120px] bg-primaryColor text-white rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
             Resume
           </button>
-          <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2  overflow-hidden  rounded">
-            <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-            <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-              {" "}
-              Contact Me
-            </span>
-          </button>
+          <ScrollLink to="contactSection" spy={true} smooth={true} offset={-100} duration={200}>
+            <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2  overflow-hidden  rounded">
+              <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+              <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                {" "}
+                Contact Me
+              </span>
+            </button>
+          </ScrollLink>
         </motion.div>
         <motion.div
           ref={refFadeOut}

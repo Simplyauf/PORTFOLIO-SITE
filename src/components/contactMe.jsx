@@ -54,7 +54,7 @@ export const ContactMe = () => {
 
   return (
     <>
-      <section className="flex justify-center items-center mt-16 w-full md:px-[5rem] lg:px-[10rem]   py-20  px-[6%]">
+      <section id="contactSection" className="flex justify-center items-center mt-16 w-full md:px-[5rem] lg:px-[10rem]   py-20  px-[6%]">
         <form
           action=""
           className=" max-w-[360px] flex flex-col gap-4   w-full py-20"
