@@ -54,7 +54,10 @@ export const ContactMe = () => {
 
   return (
     <>
-      <section id="contactSection" className="flex justify-center items-center mt-16 w-full md:px-[5rem] lg:px-[10rem]   py-20  px-[6%]">
+      <section
+        id="contactSection"
+        className="flex justify-center items-center mt-16 w-full md:px-[5rem] lg:px-[10rem]   py-20  px-[6%]"
+      >
         <form
           action=""
           className=" max-w-[360px] flex flex-col gap-4   w-full py-20"
@@ -71,7 +74,12 @@ export const ContactMe = () => {
 
           <p className="mb-4  mt-16">
             Submit the form below or send an email to{" "}
-            <b className="gradientText cursor-pointer">azeezumarfaruk@gmail.com</b>
+            <a
+              href="mailto:azeezumarfaruk@gmail.com?subject=From%20Your%20Portfolio%20Website"
+              className="gradientText cursor-pointer font-bold"
+            >
+              azeezumarfaruk@gmail.com
+            </a>
           </p>
           <div>
             <label htmlFor="">
