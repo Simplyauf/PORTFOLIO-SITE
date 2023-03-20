@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 import { RiGithubFill } from "react-icons/ri";
+import project1_auffur from "../../assets/auffur.png";
+import project2_Countries from "../../assets/rest_countries.png";
+import project3_commentSection from "../../assets/comment_section.png";
+import IpTrackerImg from "../../assets/Ip-tracker.png";
+import spaceApiImg from "../../assets/space_tourism.png";
 
 export const Projects = () => {
   return (
@@ -16,124 +21,207 @@ export const Projects = () => {
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.93 }}
             transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer flex flex-col gap-4 max-w-[350px]  2xl:max-w-[378px]  3xl:max-w-[400px]  justify-evenly p-8 rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px]   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
-              className="max-w-full h-[150px]  justify-self-center rounded"
-              src="https://sanjayloncha.netlify.app/static/media/Domino.d59842af7286460603ea.JPG"
+              className="max-w-full w-auto h-auto  justify-self-center rounded rounded-b-none"
+              src={project1_auffur}
               alt=""
             />
-            <p className="leading-[180%] text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus corrupti architecto
-              perferendis cum veritatis nemo expedita magnam illum eligendi?
-            </p>
-            <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-              {" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Mongoose</h5>{" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
-            </div>
-            <div className="flex gap-4 mt-7 w-full justify-between items-center">
-              <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                <span>Live</span>
-                <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-              </button>
-              <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                  {" "}
-                  Code
-                </span>
-                <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-              </button>
+
+            <div className="justify-evenly p-8  flex flex-col gap-4 ">
+              <h3 className="font-bold text-lg">Auffur E-furniture website</h3>
+              <p className="leading-[150%] text-justify">
+                A fullstack e-commerce website for furnitures which posesses cart,user authentication,database
+                management and admin system
+              </p>
+              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                {" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Mongoose</h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Express</h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Redux toolkit</h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+              </div>
+              <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                  <span>Live</span>
+                  <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                </button>
+                <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                  <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                  <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                    {" "}
+                    Code
+                  </span>
+                  <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                </button>
+              </div>
             </div>
           </motion.article>
-          <article className="w-full  flex flex-col gap-4 justify-evenly  max-w-[350px] p-8 rounded-md bg-white  shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]">
+          <motion.article
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.93 }}
+            transition={{ ease: "easeInOut" }}
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px]   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+          >
             <img
-              className="max-w-full h-[150px] justify-self-center rounded"
-              src="https://sanjayloncha.netlify.app/static/media/Domino.d59842af7286460603ea.JPG"
+              className="max-w-full w-auto h-auto  justify-self-center rounded rounded-b-none"
+              src={IpTrackerImg}
               alt=""
             />
-            <p className="leading-[180%] text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus corrupti architecto
-              perferendis cum veritatis nemo expedita magnam illum eligendi?
-            </p>
-            <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-              {" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Mongoose</h5>{" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
+
+            <div className="justify-evenly p-8  flex flex-col gap-4 ">
+              <h3 className="font-bold text-lg">IP Address Tracker</h3>
+              <p className="leading-[150%] text-justify">
+                A websites that detects, display location details and a map via the ip-address using the{" "}
+                <a rel="noreferrer" target="_blank" href="https://ipwho.is" className="underline">
+                  Ipwhois
+                </a>
+                &nbsp; api
+              </p>
+              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                {" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Ipwho.is api</h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">react-leaflet</h5>
+              </div>
+              <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                  <span>Live</span>
+                  <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                </button>
+                <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                  <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                  <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                    {" "}
+                    Code
+                  </span>
+                  <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                </button>
+              </div>
             </div>
-            <div className="flex gap-4 mt-7 w-full justify-between items-center">
-              <button className="h-12 w-[120px] bg-primaryColor text-white rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                Live
-              </button>
-              <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2  overflow-hidden  rounded">
-                <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                  {" "}
-                  Github
-                </span>
-              </button>
-            </div>
-          </article>
-          <article className="w-full  flex flex-col gap-4 max-w-[350px]  justify-evenly p-8 rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]">
+          </motion.article>
+          <motion.article
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.93 }}
+            transition={{ ease: "easeInOut" }}
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px]   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+          >
             <img
-              className="max-w-full h-[150px]  justify-self-center rounded"
-              src="https://sanjayloncha.netlify.app/static/media/Domino.d59842af7286460603ea.JPG"
+              className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
+              src={project2_Countries}
               alt=""
             />
-            <p className="leading-[180%] text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus corrupti architecto
-              perferendis cum veritatis nemo expedita magnam illum eligendi?
-            </p>
-            <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-              {" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Mongoose</h5>{" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+
+            <div className="justify-evenly p-8  flex flex-col gap-4 ">
+              <h3 className="font-bold text-lg">Countries data with theme toggler</h3>
+              <p className="leading-[150%] text-justify">
+                A websites that displays countries data using &nbsp;
+                <a rel="noreferrer" className="underline" target="_blank" href="https://restcountries.com">
+                  restcountries
+                </a>
+                &nbsp; api, possesing features like searching, sorting and filtering.
+              </p>
+              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                {" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Redux toolkit</h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+              </div>
+              <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                  <span>Live</span>
+                  <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                </button>
+                <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                  <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                  <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                    {" "}
+                    Code
+                  </span>
+                  <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                </button>
+              </div>
             </div>
-            <div className="flex gap-4 mt-7 w-full justify-between items-center">
-              <button className="h-12 w-[120px] bg-primaryColor text-white rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                Live
-              </button>
-              <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2  overflow-hidden  rounded">
-                <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                  {" "}
-                  Github
-                </span>
-              </button>
-            </div>
-          </article>
-          <article className="w-full  flex flex-col gap-4 max-w-[350px]  justify-evenly p-8 rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]">
+          </motion.article>
+          <motion.article
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.93 }}
+            transition={{ ease: "easeInOut" }}
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px]   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+          >
             <img
-              className="max-w-full h-[150px]  justify-self-center rounded"
-              src="https://sanjayloncha.netlify.app/static/media/Domino.d59842af7286460603ea.JPG"
+              className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
+              src={spaceApiImg}
               alt=""
             />
-            <p className="leading-[180%] text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus corrupti architecto
-              perferendis cum veritatis nemo expedita magnam illum eligendi?
-            </p>
-            <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-              {" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Mongoose</h5>{" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
-              <h5 className="p-2 bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+
+            <div className="justify-evenly p-8  flex flex-col gap-4 ">
+              <h3 className="font-bold text-lg">Space tourism multipage</h3>
+              <p className="leading-[150%] text-justify">A multipage web app</p>
+              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                {" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+              </div>
+              <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                  <span>Live</span>
+                  <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                </button>
+                <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                  <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                  <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                    {" "}
+                    Code
+                  </span>
+                  <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                </button>
+              </div>
             </div>
-            <div className="flex gap-4 mt-7 w-full justify-between items-center">
-              <button className="h-12 w-[120px] bg-primaryColor text-white rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                Live
-              </button>
-              <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2  overflow-hidden  rounded">
-                <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                  {" "}
-                  Github
-                </span>
-              </button>
+          </motion.article>
+          <motion.article
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.93 }}
+            transition={{ ease: "easeInOut" }}
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px]   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+          >
+            <img
+              className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
+              src={project3_commentSection}
+              alt=""
+            />
+
+            <div className="justify-evenly p-8  flex flex-col gap-4 ">
+              <h3 className="font-bold text-lg">Interactive Comment section</h3>
+              <p className="leading-[150%] text-justify">
+                An interactive comment section which posesses ability to upvotes & downvotes posts,send posts,delete
+                posts,track posts time and also sort posts based on votes.
+              </p>
+              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                {" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">React context</h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+              </div>
+              <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                  <span>Live</span>
+                  <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                </button>
+                <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                  <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                  <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                    {" "}
+                    Code
+                  </span>
+                  <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                </button>
+              </div>
             </div>
-          </article>
+          </motion.article>
         </div>
       </div>
     </section>
