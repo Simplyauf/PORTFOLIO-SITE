@@ -180,11 +180,21 @@ const HeroSection = () => {
         >
           <h2 className="text-xl font-bold text-center">Lets connect</h2>
           <div className="flex justify-center items-center gap-4 mt-4">
-            <FiTwitter className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
-            <FiInstagram className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
-            <FiGithub className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
-            <BsWhatsapp className="w-6 h-6 cursor-pointer hover:fill-primaryColor transition-colors ease-in duration-200" />
-            <FiLinkedin className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/UmarFarukA13?t=mvWsP0OImHUckTdvQRz4Yw&s=09">
+              <FiTwitter className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/callmhe_auf/">
+              <FiInstagram className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/Simplyauf">
+              <FiGithub className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=2348149660220">
+              <BsWhatsapp className="w-6 h-6 cursor-pointer hover:fill-primaryColor transition-colors ease-in duration-200" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/umarfaruq-abdulazeez-02369a21b/">
+              <FiLinkedin className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200" />
+            </a>
           </div>
         </motion.div>
       </div>

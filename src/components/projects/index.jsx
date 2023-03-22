@@ -26,12 +26,12 @@ export const Projects = () => {
             <img
               className="max-w-full w-auto h-auto  justify-self-center rounded rounded-b-none"
               src={project1_auffur}
-              alt=""
+              alt="auffur"
             />
 
             <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">Auffur E-furniture website</h3>
-              <p className="leading-[150%] text-justify">
+              <p className="leading-[150%] text-left">
                 A fullstack e-commerce website for furnitures which posesses cart,user authentication,database
                 management and admin system
               </p>
@@ -44,18 +44,26 @@ export const Projects = () => {
                 <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                  <span>Live</span>
-                  <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                </button>
-                <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                  <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                  <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                    {" "}
-                    Code
-                  </span>
-                  <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-                </button>
+                <a target="_blank" rel="noreferrer" href="https://auffur-furnishes.netlify.app/">
+                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                    <span>Live</span>
+                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                  </button>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Simplyauf/Auffur-Ecommerce-furniture-website"
+                >
+                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                      {" "}
+                      Code
+                    </span>
+                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                  </button>
+                </a>
               </div>
             </div>
           </motion.article>
@@ -68,12 +76,12 @@ export const Projects = () => {
             <img
               className="max-w-full w-auto h-auto  justify-self-center rounded rounded-b-none"
               src={IpTrackerImg}
-              alt=""
+              alt="ip address tracker"
             />
 
             <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">IP Address Tracker</h3>
-              <p className="leading-[150%] text-justify">
+              <p className="leading-[150%] text-left">
                 A websites that detects, display location details and a map via the ip-address using the{" "}
                 <a rel="noreferrer" target="_blank" href="https://ipwho.is" className="underline">
                   Ipwhois
@@ -88,18 +96,22 @@ export const Projects = () => {
                 <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">react-leaflet</h5>
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                  <span>Live</span>
-                  <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                </button>
-                <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                  <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                  <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                    {" "}
-                    Code
-                  </span>
-                  <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-                </button>
+                <a target="_blank" rel="noreferrer" href="https://ip-address-tracker-auf.netlify.app/">
+                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                    <span>Live</span>
+                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                  </button>
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://github.com/Simplyauf/IP-ADDRESS-TRACKER-REACTJS">
+                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                      {" "}
+                      Code
+                    </span>
+                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                  </button>
+                </a>
               </div>
             </div>
           </motion.article>
@@ -112,12 +124,12 @@ export const Projects = () => {
             <img
               className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
               src={project2_Countries}
-              alt=""
+              alt="restcountries"
             />
 
             <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">Countries data with theme toggler</h3>
-              <p className="leading-[150%] text-justify">
+              <p className="leading-[150%] text-left">
                 A websites that displays countries data using &nbsp;
                 <a rel="noreferrer" className="underline" target="_blank" href="https://restcountries.com">
                   restcountries
@@ -131,18 +143,26 @@ export const Projects = () => {
                 <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                  <span>Live</span>
-                  <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                </button>
-                <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                  <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                  <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                    {" "}
-                    Code
-                  </span>
-                  <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-                </button>
+                <a target="_blank" rel="noreferrer" href="https://aufrestcountriesapi.netlify.app">
+                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                    <span>Live</span>
+                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                  </button>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Simplyauf/REST-Countries-API-with-Framer-motion "
+                >
+                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                      {" "}
+                      Code
+                    </span>
+                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                  </button>
+                </a>
               </div>
             </div>
           </motion.article>
@@ -155,30 +175,34 @@ export const Projects = () => {
             <img
               className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
               src={spaceApiImg}
-              alt=""
+              alt="space-data"
             />
 
             <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">Space tourism multipage</h3>
-              <p className="leading-[150%] text-justify">A multipage web app</p>
+              <p className="leading-[150%] text-left">A multipage web app dynamically populated with json data</p>
               <div className="flex gap-2 font-medium text-[20px] flex-wrap">
                 {" "}
                 <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
                 <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                  <span>Live</span>
-                  <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                </button>
-                <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                  <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                  <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                    {" "}
-                    Code
-                  </span>
-                  <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-                </button>
+                <a target="_blank" rel="noreferrer" href="https://space-tourism-multipage-react.netlify.app/">
+                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                    <span>Live</span>
+                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                  </button>
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://github.com/Simplyauf/space-tourism-multipage-reactjs">
+                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                      {" "}
+                      Code
+                    </span>
+                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                  </button>
+                </a>
               </div>
             </div>
           </motion.article>
@@ -191,12 +215,12 @@ export const Projects = () => {
             <img
               className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
               src={project3_commentSection}
-              alt=""
+              alt="comment section"
             />
 
             <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">Interactive Comment section</h3>
-              <p className="leading-[150%] text-justify">
+              <p className="leading-[150%] text-left">
                 An interactive comment section which posesses ability to upvotes & downvotes posts,send posts,delete
                 posts,track posts time and also sort posts based on votes.
               </p>
@@ -207,18 +231,26 @@ export const Projects = () => {
                 <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                  <span>Live</span>
-                  <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                </button>
-                <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                  <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                  <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                    {" "}
-                    Code
-                  </span>
-                  <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-                </button>
+                <a target="_blank" rel="noreferrer" href="https://interactive-comment-section-auf.netlify.app/">
+                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                    <span>Live</span>
+                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                  </button>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Simplyauf/interactive-comment-section-reactJS"
+                >
+                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                      {" "}
+                      Code
+                    </span>
+                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                  </button>
+                </a>
               </div>
             </div>
           </motion.article>
