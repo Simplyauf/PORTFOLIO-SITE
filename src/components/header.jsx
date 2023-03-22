@@ -8,6 +8,7 @@ import { AnimatePresence } from "framer-motion";
 const Header = () => {
   const [openHamBurgerBar, setOpenHamburgerBar] = useState(true);
 
+  // make the header have a bigger shadow when it reaches a specific height
   useEffect(() => {
     const OnScroll = () => {
       let headerDOM = document.querySelector("header");
@@ -23,7 +24,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", OnScroll);
     };
-  });
+  },[]);
 
   return (
     <>
@@ -36,7 +37,7 @@ const Header = () => {
           <h2 className="text-2xl font-bold md:text-3xl">Auf</h2>
           <AnimatePresence>
             {openHamBurgerBar ? (
-              <motion.button whileTap={{ rotate: [0, 45] }} transition={{ duration: 0.5, ease: "circOut" }}>
+              <motion.button animate={{ rotate: 0 }} transition={{ duration: 0.22, ease: "circOut" }}>
                 <RxHamburgerMenu
                   // animate={{ rotate: "180deg", opacity: 1, transition: { duration: 0.3, ease: "easeOut" } }}
                   // exit={{ rotate: "180deg", opacity: 0, transition: { duration: 0.3, ease: "easeIn" } }}
@@ -45,11 +46,7 @@ const Header = () => {
                 />
               </motion.button>
             ) : (
-              <motion.button
-                whileTap={{ rotate: [45, 90] }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                className=""
-              >
+              <motion.button animate={{ rotate: 180 }} transition={{ duration: 0.22, ease: "easeInOut" }} className="">
                 <AiOutlineClose
                   className="w-8 h-8 dm:hidden cursor-pointer"
                   onClick={() => setOpenHamburgerBar(!openHamBurgerBar)}
