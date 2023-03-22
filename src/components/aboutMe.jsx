@@ -1,24 +1,10 @@
-import { useAnimation, useInView, motion } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 export const AboutMe = () => {
   const fadeOutMoveUpVariants = {
-    initial: { y: 30, opacity: 0 },
+    initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
-
-  const refFadeOut = useRef(null);
-  const inViewFadeOut = useInView(refFadeOut);
-
-  const controlsFadeOut = useAnimation();
-
-  useEffect(() => {
-    if (inViewFadeOut) {
-      controlsFadeOut.start({ y: 0, opacity: 1, transition: { duration: 2, ease: "easeOut" } });
-    } else {
-      controlsFadeOut.start({ y: 30, opacity: 0 });
-    }
-  }, [inViewFadeOut]);
 
   return (
     <section
@@ -27,25 +13,49 @@ export const AboutMe = () => {
     >
       <div className="skew-y-[-4deg]  w-full px-[2%] pt-20 ">
         <h2 className="font-bold text-2xl">About Me</h2>
-        <div className="bg-primaryColor  h-[10px] mt-[4px] w-[60px] -skew-x-6"></div>
+        <div className="bg-primaryColor  h-[10px] mt-[4px] w-[60px] -skew-x-6 mb-16"></div>
         <motion.p
-          ref={refFadeOut}
           variants={fadeOutMoveUpVariants}
           initial="initial"
-          animate={controlsFadeOut}
-          className="leading-[140%] mt-16"
+          whileInView="animate"
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="leading-[190%]  2xl:text-lg"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam hic corporis ab recusandae aut at autem
-          consequatur numquam cumque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium placeat
-          corrupti quae quod cum, expedita suscipit sed atque cumque voluptates. Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Laborum esse eveniet minus dignissimos itaque molestiae cum autem laudantium est sunt.
+          Hello, My name is <b>Abdulazeez Umar faruq </b> and i am a self-taught frontend developer with over 1 year
+          plus experience in the industry. I am passionate about creating beautiful and seamless user experience. My
+          love for problem solving and using my logical skills to come up with creative solutions as led me to this
+          path.
+        </motion.p>
+        <motion.p
+          variants={fadeOutMoveUpVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="leading-[190%] mt-3 2xl:text-lg "
+        >
+          Over the course of my career, I have taken hundreds of hours of courses across various online programming and
+          learning platforms, including YouTube. I have also worked on several projects to further my skills. I am
+          constantly researching the latest trends and best practices in the industry, and I make it a priority to stay
+          current with the latest tools and technologies. This commitment allows me to continuously improve my skills
+          and deliver high-quality user experiences.
+        </motion.p>
+        <motion.p
+          variants={fadeOutMoveUpVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="leading-[190%] mt-3 2xl:text-lg "
+        >
+          I am actively seeking entry-level roles, including internships and part-time positions, that will allow me to
+          showcase my skills and gain more practical experience in the industry. If you have any opportunities
+          available, please don&apos;t hesitate to contact me.
         </motion.p>
         <motion.button
-          ref={refFadeOut}
           variants={fadeOutMoveUpVariants}
           initial="initial"
-          animate={controlsFadeOut}
-          className="h-12 mt-5 w-[120px] bg-primaryColor text-white rounded shadow-sm transition-colors hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]"
+          whileInView="animate"
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="h-12 mt-6 w-[120px] bg-primaryColor text-white rounded shadow-sm transition-colors hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]"
         >
           Resume
         </motion.button>
