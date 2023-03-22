@@ -21,7 +21,7 @@ export const Projects = () => {
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.93 }}
             transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px]   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
               className="max-w-full w-auto h-auto  justify-self-center rounded rounded-b-none"
@@ -29,7 +29,7 @@ export const Projects = () => {
               alt=""
             />
 
-            <div className="justify-evenly p-8  flex flex-col gap-4 ">
+            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">Auffur E-furniture website</h3>
               <p className="leading-[150%] text-justify">
                 A fullstack e-commerce website for furnitures which posesses cart,user authentication,database
@@ -63,7 +63,7 @@ export const Projects = () => {
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.93 }}
             transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px]   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
               className="max-w-full w-auto h-auto  justify-self-center rounded rounded-b-none"
@@ -71,7 +71,7 @@ export const Projects = () => {
               alt=""
             />
 
-            <div className="justify-evenly p-8  flex flex-col gap-4 ">
+            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">IP Address Tracker</h3>
               <p className="leading-[150%] text-justify">
                 A websites that detects, display location details and a map via the ip-address using the{" "}
@@ -107,7 +107,7 @@ export const Projects = () => {
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.93 }}
             transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px]   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
               className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
@@ -115,7 +115,7 @@ export const Projects = () => {
               alt=""
             />
 
-            <div className="justify-evenly p-8  flex flex-col gap-4 ">
+            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">Countries data with theme toggler</h3>
               <p className="leading-[150%] text-justify">
                 A websites that displays countries data using &nbsp;
@@ -150,7 +150,7 @@ export const Projects = () => {
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.93 }}
             transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px]   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
               className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
@@ -158,7 +158,7 @@ export const Projects = () => {
               alt=""
             />
 
-            <div className="justify-evenly p-8  flex flex-col gap-4 ">
+            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">Space tourism multipage</h3>
               <p className="leading-[150%] text-justify">A multipage web app</p>
               <div className="flex gap-2 font-medium text-[20px] flex-wrap">
@@ -186,7 +186,7 @@ export const Projects = () => {
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.93 }}
             transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px]   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
               className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
@@ -194,7 +194,7 @@ export const Projects = () => {
               alt=""
             />
 
-            <div className="justify-evenly p-8  flex flex-col gap-4 ">
+            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">Interactive Comment section</h3>
               <p className="leading-[150%] text-justify">
                 An interactive comment section which posesses ability to upvotes & downvotes posts,send posts,delete
