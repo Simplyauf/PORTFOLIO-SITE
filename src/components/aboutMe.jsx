@@ -50,15 +50,21 @@ export const AboutMe = () => {
           showcase my skills and gain more practical experience in the industry. If you have any opportunities
           available, please don&apos;t hesitate to contact me.
         </motion.p>
-        <motion.button
-          variants={fadeOutMoveUpVariants}
-          initial="initial"
-          whileInView="animate"
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="h-12 mt-6 w-[120px] bg-primaryColor text-white rounded shadow-sm transition-colors hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]"
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://drive.google.com/file/d/1aO95l56XfzyZpcRLiwrcHbnEsmTo2jSP/view?usp=sharing"
         >
-          Resume
-        </motion.button>
+          <motion.button
+            variants={fadeOutMoveUpVariants}
+            initial="initial"
+            whileInView="animate"
+            transition={{ duration: 1, ease: "easeInOut" }}
+            className="h-12 mt-6 w-[120px] bg-primaryColor text-white rounded shadow-sm transition-colors hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]"
+          >
+            Resume
+          </motion.button>
+        </a>
       </div>
     </section>
   );

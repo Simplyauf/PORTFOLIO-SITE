@@ -19,9 +19,12 @@ export const Skills = () => {
   };
 
   // single skill box
-  const ToolContainer = ({ children, toolName, toolsColor }) => {
+  const ToolContainer = ({ children, toolName, toolsColor, index }) => {
     return (
       <motion.div
+        viewport={{ once: true }}
+        initial={{ scale: 0, opacity: 0, transition: { duration: 0.2, ease: "easeOut", delay: `${index / 10}` } }}
+        whileInView={{ scale: 1, opacity: 1, transition: { duration: 0.2, ease: "easeIn", delay: `${index / 10}` } }}
         whileHover={{ scale: 1.1 }}
         transition={{ ease: "easeInOut" }}
         className={`flex flex-col min-h-[140px] min-w-[99px] basis-[32%] max-w-[100px] sm:max-w-[120px] border  rounded p-3 items-center justify-center gap-4 skillsIcon-container`}
@@ -48,7 +51,7 @@ export const Skills = () => {
         <div className="flex items-center justify-center gap-4 flex-wrap mt-16 lg:px-[5%] xl:px-[10%] 2xl:px-[20%]">
           {Object.keys(tools).map((elem, index) => {
             return (
-              <ToolContainer toolName={elem} toolsColor={tools[elem][1]} key={index}>
+              <ToolContainer toolName={elem} index={index} toolsColor={tools[elem][1]} key={index}>
                 {tools[elem][0]}
               </ToolContainer>
             );

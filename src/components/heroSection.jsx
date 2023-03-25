@@ -158,9 +158,15 @@ const HeroSection = () => {
           variants={fadeOutMoveUpVariants}
           className="flex gap-4 mt-8"
         >
-          <button className="h-12 w-[120px] bg-primaryColor text-white rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-            Resume
-          </button>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://drive.google.com/file/d/1aO95l56XfzyZpcRLiwrcHbnEsmTo2jSP/view?usp=sharing"
+          >
+            <button className="h-12 w-[120px] bg-primaryColor text-white rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+              Resume
+            </button>
+          </a>
           <ScrollLink to="contactSection" spy={true} smooth={true} offset={-100} duration={200}>
             <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2  overflow-hidden  rounded">
               <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
