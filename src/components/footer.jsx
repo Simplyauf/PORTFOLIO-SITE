@@ -12,7 +12,7 @@ export const Footer = () => {
         <a target="_blank" rel="noreferrer" href="https://github.com/Simplyauf">
           <FiGithub className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200 border p-3 border-[#3d4449] hover:border-primaryColor  box-content rounded-[50%]" />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/umarfaruq-abdulazeez-02369a21b/">
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/azeezumarfaruk">
           <FiLinkedin className="w-6 h-6 cursor-pointer hover:stroke-primaryColor transition-colors ease-in duration-200 border p-3 border-[#3d4449] hover:border-primaryColor box-content rounded-[50%]" />
         </a>
         <a target="_blank" rel="noreferrer" href="https://www.instagram.com/callmhe_auf/">
