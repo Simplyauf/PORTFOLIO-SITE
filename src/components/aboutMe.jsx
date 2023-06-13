@@ -21,7 +21,7 @@ export const AboutMe = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="leading-[190%]  2xl:text-lg"
         >
-          Hello, My name is <b>Abdulazeez Umar faruq </b> and i am a self-taught frontend developer with over 1 year
+          Hello, My name is <b>Abdulazeez Umar faruq </b> and i am a self-taught frontend developer with over 2 year
           plus experience in the industry. I am passionate about creating beautiful and seamless user experience. My
           love for problem solving and using my logical skills to come up with creative solutions as led me to this
           path.
@@ -33,8 +33,7 @@ export const AboutMe = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="leading-[190%] mt-3 2xl:text-lg "
         >
-          Over the course of my career, I have taken hundreds of hours of courses across various online programming and
-          learning platforms, including YouTube. I have also worked on several projects to further my skills. I am
+          Over the course of my career, I have dedicated hundreds of hours to courses on various online programming and learning platforms , including YouTube. I have also worked on several projects to further my skills. I am
           constantly researching the latest trends and best practices in the industry, and I make it a priority to stay
           current with the latest tools and technologies. This commitment allows me to continuously improve my skills
           and deliver high-quality user experiences.
@@ -46,9 +45,7 @@ export const AboutMe = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="leading-[190%] mt-3 2xl:text-lg "
         >
-          I am actively seeking job opportunities, including freelance and part-time positions, that will allow me to
-          showcase my skills, gain more  experience and contribute to the team. If you have any opportunities
-          available, please don&apos;t hesitate to contact me.
+        I am currently actively seeking job opportunities, including freelance and part-time positions, where I can demonstrate my skills, acquire more experience, and contribute to a team. If you have any available opportunities, please do not hesitate to contact me.
         </motion.p>
         <motion.div
         variants={fadeOutMoveUpVariants}
