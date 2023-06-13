@@ -55,20 +55,20 @@ export const AboutMe = () => {
         initial="initial"
         whileInView="animate"
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="leading-[190%] mt-5 "
+        className="leading-[190%] mt-[84px] "
       >
-      <h2 className="font-bold text-[28px]">Experience</h2>
+      <h2 className="font-bold text-[24px]">Experience</h2>
       <div className="w-full flex-col mt-8 flex justify-between">
            
             <div className=" experiences">
              
-              <div className="flex items-center "> <h1 className="text-[24px] font-bold">Dera Foundation</h1>
+              <div className="flex items-center "> <h1 className="text-[20px] font-bold">Dera Foundation</h1>
               <span className="text-[13px] ml-6 font-extralight  experiences">
                 May 2023 - Present
             </span>
               </div>
               <h3 className="text-[19px] mt-3 font-medium">Frontend developer</h3>
-              <ul className="lg:space-y-3 space-y-6  mt-3">
+              <ul className="lg:space-y-3 space-y-6  mt-3 list-disc pl-[30px]">
                 <li className="text-[16px] ">
                 Collaborated closely with a frontend developer to develop and build an elegant and responsive user interface for the company website.
                 </li>
@@ -78,18 +78,19 @@ export const AboutMe = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full flex-col  flex justify-between mt-8">
+          <div className="w-full flex-col  flex justify-between mt-[4rem]">
           
           <div className=" experiences">
            
-            <div className="flex items-center "> <h1 className="text-[24px] font-bold">Guidetryb</h1>
+            <div className="flex items-center flex-wrap"> <h1 className="text-[20px] font-bold">Guidetryb</h1>
             <span className="text-[13px] ml-6 font-extralight  experiences">
               May 2023 - Jun 2023
           </span>
-          <span className="italics ml-4">/ https://guidetryb.com</span>
+          <a className="text-blue-500 underline italics ml-4" href="https://guidetryb.com">https://guidetryb.com</a>
+         
             </div>
             <h3 className="text-[19px] mt-3 font-medium">Frontend developer</h3>
-            <ul className="lg:space-y-3 space-y-6  mt-3">
+            <ul className="lg:space-y-3 space-y-6  mt-3 list-disc pl-[30px]">
               <li className="text-[16px]">
               Developed the frontend of the website independently, utilizing design elements supplied by designers and working with backend developers to integrate APIs to build a visually stunning and functional website.
               </li>
