@@ -46,10 +46,60 @@ export const AboutMe = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="leading-[190%] mt-3 2xl:text-lg "
         >
-          I am actively seeking entry-level roles, including internships and part-time positions, that will allow me to
-          showcase my skills and gain more practical experience in the industry. If you have any opportunities
+          I am actively seeking job opportunities, including freelance and part-time positions, that will allow me to
+          showcase my skills, gain more  experience and contribute to the team. If you have any opportunities
           available, please don&apos;t hesitate to contact me.
         </motion.p>
+        <motion.div
+        variants={fadeOutMoveUpVariants}
+        initial="initial"
+        whileInView="animate"
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="leading-[190%] mt-5 "
+      >
+      <h2 className="font-bold text-[28px]">Experience</h2>
+      <div className="w-full flex-col mt-8 flex justify-between">
+           
+            <div className=" experiences">
+             
+              <div className="flex items-center "> <h1 className="text-[24px] font-bold">Dera Foundation</h1>
+              <span className="text-[13px] ml-6 font-extralight  experiences">
+                May 2023 - Present
+            </span>
+              </div>
+              <h3 className="text-[19px] mt-3 font-medium">Frontend developer</h3>
+              <ul className="lg:space-y-3 space-y-6  mt-3">
+                <li className="text-[16px] ">
+                Collaborated closely with a frontend developer to develop and build an elegant and responsive user interface for the company website.
+                </li>
+                <li className="text-[16px] ">
+                Actively participated in team meetings, providing input on design decisions, discussing project workflows, and effectively communicating progress updates.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-full flex-col  flex justify-between mt-8">
+          
+          <div className=" experiences">
+           
+            <div className="flex items-center "> <h1 className="text-[24px] font-bold">Guidetryb</h1>
+            <span className="text-[13px] ml-6 font-extralight  experiences">
+              May 2023 - Jun 2023
+          </span>
+          <span className="italics ml-4">/ https://guidetryb.com</span>
+            </div>
+            <h3 className="text-[19px] mt-3 font-medium">Frontend developer</h3>
+            <ul className="lg:space-y-3 space-y-6  mt-3">
+              <li className="text-[16px]">
+              Developed the frontend of the website independently, utilizing design elements supplied by designers and working with backend developers to integrate APIs to build a visually stunning and functional website.
+              </li>
+              <li className="text-[16px] ">
+              Communicated regularly with the client, understanding their requirements, providing progress updates, and incorporating feedback to deliver a website that aligns with their interests and goals.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </motion.div>
         <a
           target="_blank"
           rel="noreferrer"
