@@ -59,7 +59,7 @@ export const AboutMe = () => {
            
             <div className=" experiences">
              
-              <div className="flex items-center "> <h1 className="text-[20px] font-bold">Dera Foundation</h1>
+              <div className="flex items-center "> <h1 className="text-[20px] font-bold">Dera</h1>
               <span className="text-[13px] ml-6 font-extralight  experiences">
                 May 2023 - Present
             </span>
