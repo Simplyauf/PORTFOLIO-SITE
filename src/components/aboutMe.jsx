@@ -86,7 +86,7 @@ export const AboutMe = () => {
           <a className="text-blue-500 underline italics ml-4" href="https://guidetryb.com">https://guidetryb.com</a>
          
             </div>
-            <h3 className="text-[19px] mt-3 font-medium">Frontend developer (Freelance)</h3>
+            <h3 className="text-[19px] mt-3 font-medium">Frontend developer (Contract)</h3>
             <ul className="lg:space-y-3 space-y-6  mt-3 list-disc pl-[30px]">
               <li className="text-[16px]">
               Developed the frontend of the website independently, utilizing design elements supplied by designers and working with backend developers to integrate APIs to build a visually stunning and functional website.
