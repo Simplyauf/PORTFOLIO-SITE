@@ -63,6 +63,8 @@ export const AboutMe = () => {
               <span className="text-[13px] ml-6 font-extralight  experiences">
                 May 2023 - Present
             </span>
+                <a target="_blank" rel="noopener noreferrer" className="text-blue-500 underline italics ml-4" href="https://dera.money">https://dera.money</a>
+         
               </div>
               <h3 className="text-[19px] mt-3 font-medium">Frontend developer</h3>
               <ul className="lg:space-y-3 space-y-6  mt-3 list-disc pl-[30px]">
@@ -83,7 +85,7 @@ export const AboutMe = () => {
             <span className="text-[13px] ml-6 font-extralight  experiences">
               May 2023 - Jun 2023
           </span>
-          <a className="text-blue-500 underline italics ml-4" href="https://guidetryb.com">https://guidetryb.com</a>
+          <a target="_blank" rel="noopener noreferrer" className="text-blue-500 underline italics ml-4" href="https://guidetryb.com">https://guidetryb.com</a>
          
             </div>
             <h3 className="text-[19px] mt-3 font-medium">Frontend developer (Contract)</h3>
