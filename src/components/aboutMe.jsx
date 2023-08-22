@@ -64,7 +64,7 @@ export const AboutMe = () => {
                 May 2023 - Present
             </span>
               </div>
-              <h3 className="text-[19px] mt-3 font-medium">Frontend developer (Intern)</h3>
+              <h3 className="text-[19px] mt-3 font-medium">Frontend developer</h3>
               <ul className="lg:space-y-3 space-y-6  mt-3 list-disc pl-[30px]">
                 <li className="text-[16px] ">
                 Collaborated closely with a frontend developer to develop and build an elegant and responsive user interface for the company website.
