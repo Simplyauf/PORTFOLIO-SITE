@@ -19,12 +19,22 @@ export const AboutMe = () => {
           initial="initial"
           whileInView="animate"
           transition={{ duration: 1, ease: "easeInOut" }}
+          className="leading-[190%]  2xl:text-lg mb-1.5"
+        >
+          Hello, My name is <b>Abdulazeez Umar faruq </b>.
+        </motion.p>
+        <motion.p
+          variants={fadeOutMoveUpVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ duration: 1, ease: "easeInOut" }}
           className="leading-[190%]  2xl:text-lg"
         >
-          Hello, My name is <b>Abdulazeez Umar faruq </b> and i am a self-taught frontend developer with over 2 year
-          plus experience in the industry. I am passionate about creating beautiful and seamless user experience. My
-          love for problem solving and using my logical skills to come up with creative solutions as led me to this
-          path.
+          With over 3 years of hands-on experience in frontend development, I am
+          dedicated to creating seamless and visually appealing user
+          experiences. My journey as a self-taught developer has equipped me
+          with a deep understanding of frontend technologies and a knack for
+          problem-solving.
         </motion.p>
         <motion.p
           variants={fadeOutMoveUpVariants}
@@ -33,10 +43,12 @@ export const AboutMe = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="leading-[190%] mt-3 2xl:text-lg "
         >
-          Over the course of my career, I have dedicated hundreds of hours to courses on various online programming and learning platforms , including YouTube. I have also worked on several projects to further my skills. I am
-          constantly researching the latest trends and best practices in the industry, and I make it a priority to stay
-          current with the latest tools and technologies. This commitment allows me to continuously improve my skills
-          and deliver high-quality user experiences.
+          Throughout my career, I've spearheaded the development of various
+          products, showcasing my ability to build responsive, fast, and
+          stunning UIs while prioritizing functionality and performance. From
+          concept to execution, I thrive on transforming ideas into functional,
+          user-centric designs that not only look great but also deliver optimal
+          performance.
         </motion.p>
         <motion.p
           variants={fadeOutMoveUpVariants}
@@ -45,61 +57,106 @@ export const AboutMe = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="leading-[190%] mt-3 2xl:text-lg "
         >
-        I am currently actively seeking job opportunities, including freelance and part-time positions, where I can demonstrate my skills, acquire more experience, and contribute to a team. If you have any available opportunities, please do not hesitate to contact me.
+          I stay at the forefront of industry trends and best practices,
+          ensuring that my skills are always up-to-date with the latest tools
+          and technologies. My commitment to continuous learning and improvement
+          allows me to deliver high-quality results consistently. If you an
+          exciting opportunity available, please do not hesitate to contact me.
         </motion.p>
         <motion.div
-        variants={fadeOutMoveUpVariants}
-        initial="initial"
-        whileInView="animate"
-        transition={{ duration: 1, ease: "easeInOut" }}
-        className="leading-[190%] mt-[84px] "
-      >
-      <h2 className="font-bold text-[24px]">Experience</h2>
-      <div className="w-full flex-col mt-8 flex justify-between">
-           
+          variants={fadeOutMoveUpVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="leading-[190%] mt-[84px] "
+        >
+          <h2 className="font-bold text-[24px]">Experience</h2>
+          <div className="w-full flex-col mt-8 flex justify-between">
             <div className=" experiences">
-             
-              <div className="flex items-center "> <h1 className="text-[20px] font-bold">Dera</h1>
-              <span className="text-[13px] ml-6 font-extralight  experiences">
-                May 2023 - Present
-            </span>
-                <a target="_blank" rel="noopener noreferrer" className="text-blue-500 underline italics ml-4" href="https://dera.money">https://dera.money</a>
-         
+              <div className="flex items-center flex-wrap">
+                {" "}
+                <h1 className="text-[20px] font-bold">Manaknight Digital</h1>
+                <span className="text-[13px] ml-6 font-extralight  experiences">
+                  Dec 2023 - Present
+                </span>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 underline italics ml-4"
+                  href="https://guidetryb.com"
+                >
+                  https://manaknightdigital.com/
+                </a>
               </div>
-              <h3 className="text-[19px] mt-3 font-medium">Frontend developer</h3>
+              <h3 className="text-[19px] mt-3 font-medium">
+                Frontend Developer
+              </h3>
               <ul className="lg:space-y-3 space-y-6  mt-3 list-disc pl-[30px]">
-                <li className="text-[16px] ">
-                Collaborated closely with a frontend developer to develop and build an elegant and responsive user interface for the company website.
+                <li className="text-[16px]">
+                  Conducted direct meetings with diverse clients to
+                  comprehensively understand their product requirements and
+                  translate them into actionable development plans. Implemented
+                  client feedback and suggestions into their applications,
+                  ensuring alignment with their vision and goals while fostering
+                  strong client relationships
                 </li>
                 <li className="text-[16px] ">
-                Actively participated in team meetings, providing input on design decisions, discussing project workflows, and effectively communicating progress updates.
+                  Successfully optimized multiple projects for improved
+                  performance and SEO by transitioning them to Hexo-based
+                  platforms, achieving remarkable Lighthouse speed index
+                  reductions from 3.4–5.8s to 1.5–1.9s, and attaining SEO scores
+                  of 100 and performance ratings of 90+.
+                </li>
+                <li className="text-[16px] ">
+                  Spearheaded the development of a cutting-edge gacha
+                  application frontend, integrating complex probability
+                  calculations and a pity system, while ensuring seamless user
+                  experiences with captivating item animations and efficient API
+                  integration.
+                </li>
+                <li className="text-[16px] ">
+                  Utilized Jenkins for continuous integration and continuous
+                  deployment (CI/CD), along with Git and Gitea for version
+                  control, across various projects within the company.
                 </li>
               </ul>
             </div>
           </div>
           <div className="w-full flex-col  flex justify-between mt-[4rem]">
-          
-          <div className=" experiences">
-           
-            <div className="flex items-center flex-wrap"> <h1 className="text-[20px] font-bold">Guidetryb</h1>
-            <span className="text-[13px] ml-6 font-extralight  experiences">
-              May 2023 - Jun 2023
-          </span>
-          <a target="_blank" rel="noopener noreferrer" className="text-blue-500 underline italics ml-4" href="https://guidetryb.com">https://guidetryb.com</a>
-         
+            <div className=" experiences">
+              <div className="flex items-center ">
+                {" "}
+                <h1 className="text-[20px] font-bold">Dera</h1>
+                <span className="text-[13px] ml-6 font-extralight  experiences">
+                  May 2023 - Feb 2024
+                </span>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 underline italics ml-4"
+                  href="https://dera.money"
+                >
+                  https://dera.money
+                </a>
+              </div>
+              <h3 className="text-[19px] mt-3 font-medium">
+                Frontend developer
+              </h3>
+              <ul className="lg:space-y-3 space-y-6  mt-3 list-disc pl-[30px]">
+                <li className="text-[16px] ">
+                  Collaborated closely with a frontend developer to develop and
+                  build an elegant and responsive user interface for the company
+                  website.
+                </li>
+                <li className="text-[16px] ">
+                  Actively participated in team meetings, providing input on
+                  design decisions, discussing project workflows, and
+                  effectively communicating progress updates.
+                </li>
+              </ul>
             </div>
-            <h3 className="text-[19px] mt-3 font-medium">Frontend developer (Contract)</h3>
-            <ul className="lg:space-y-3 space-y-6  mt-3 list-disc pl-[30px]">
-              <li className="text-[16px]">
-              Developed the frontend of the website independently, utilizing design elements supplied by designers and working with backend developers to integrate APIs to build a visually stunning and functional website.
-              </li>
-              <li className="text-[16px] ">
-              Communicated regularly with the client, understanding their requirements, providing progress updates, and incorporating feedback to deliver a website that aligns with their interests and goals.
-              </li>
-            </ul>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
         <a
           target="_blank"
           rel="noreferrer"
