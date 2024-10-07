@@ -77,7 +77,7 @@ export const AboutMe = () => {
                 {" "}
                 <h1 className="text-[20px] font-bold">Manaknight Digital</h1>
                 <span className="text-[13px] ml-6 font-extralight  experiences">
-                  Dec 2023 - Present
+                  Dec 2023 - Sept 2024
                 </span>
                 <a
                   target="_blank"

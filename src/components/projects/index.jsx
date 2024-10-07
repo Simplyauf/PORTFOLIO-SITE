@@ -5,7 +5,10 @@ import project1_auffur from "../../assets/auffur.png";
 import project2_Countries from "../../assets/rest_countries.png";
 import project3_commentSection from "../../assets/comment_section.png";
 import IpTrackerImg from "../../assets/Ip-tracker.png";
-import spaceApiImg from "../../assets/space_tourism.png";
+import updatestack from "../../assets/updatestack-img.png";
+import dera from "../../assets/dera-img.png";
+import kito from "../../assets/questionaire-img.png";
+import automateintel from "../../assets/automateintel.png";
 
 export const Projects = () => {
   return (
@@ -24,7 +27,7 @@ export const Projects = () => {
             className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
-              className="max-w-full w-auto h-auto  justify-self-center rounded rounded-b-none"
+              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none"
               src={project1_auffur}
               alt="auffur"
             />
@@ -32,19 +35,33 @@ export const Projects = () => {
             <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
               <h3 className="font-bold text-lg">Auffur E-furniture website</h3>
               <p className="leading-[150%] text-left">
-                A fullstack e-commerce website for furnitures which posesses cart,user authentication,database
-                management and admin system
+                A fullstack e-commerce website for furnitures which posesses
+                cart,user authentication,database management and admin system
               </p>
               <div className="flex gap-2 font-medium text-[20px] flex-wrap">
                 {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Mongoose</h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Express</h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Redux toolkit</h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Mongoose
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Express
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Redux toolkit
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Reactjs
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Tailwind CSS
+                </h5>
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a target="_blank" rel="noreferrer" href="https://auffur-furnishes.netlify.app/">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://auffur-furnishes.netlify.app/"
+                >
                   <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
                     <span>Live</span>
                     <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
@@ -71,45 +88,41 @@ export const Projects = () => {
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.93 }}
             transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
-              className="max-w-full w-auto h-auto  justify-self-center rounded rounded-b-none"
-              src={IpTrackerImg}
-              alt="ip address tracker"
+              className="object-cover 2xl:min-h-[300px] max-w-full w-auto min-h-[262.5px] h-auto  justify-self-center rounded  rounded-b-none"
+              src={updatestack}
+              alt="space-data"
             />
 
             <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">IP Address Tracker</h3>
+              <h3 className="font-bold text-lg">Updatestack</h3>
               <p className="leading-[150%] text-left">
-                A websites that detects, display location details and a map via the ip-address using the{" "}
-                <a rel="noreferrer" target="_blank" href="https://ipwho.is" className="underline">
-                  Ipwhois
-                </a>
-                &nbsp; api
+                A multiportal web application for automating and sharing updates
+                between between stakeholders, investors, and companies.
               </p>
               <div className="flex gap-2 font-medium text-[20px] flex-wrap">
                 {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Ipwho.is api</h5>
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">react-leaflet</h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Reactjs
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Hexo
+                </h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Tailwind CSS
+                </h5>
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a target="_blank" rel="noreferrer" href="https://ip-address-tracker-auf.netlify.app/">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://updatestack.com/"
+                >
                   <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
                     <span>Live</span>
                     <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-                <a target="_blank" rel="noreferrer" href="https://github.com/Simplyauf/IP-ADDRESS-TRACKER-REACTJS">
-                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                      {" "}
-                      Code
-                    </span>
-                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
                   </button>
                 </a>
               </div>
@@ -122,28 +135,136 @@ export const Projects = () => {
             className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
-              className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
-              src={project2_Countries}
-              alt="restcountries"
+              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded  rounded-b-none"
+              src={automateintel}
+              alt="comment section"
             />
 
             <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">Countries data with theme toggler</h3>
+              <h3 className="font-bold text-lg">AutomateIntel</h3>
               <p className="leading-[150%] text-left">
-                A websites that displays countries data using &nbsp;
-                <a rel="noreferrer" className="underline" target="_blank" href="https://restcountries.com">
-                  restcountries
-                </a>
-                &nbsp; api, possesing features like searching, sorting and filtering.
+                Different AI solutions for Businesses
               </p>
               <div className="flex gap-2 font-medium text-[20px] flex-wrap">
                 {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Redux toolkit</h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  React context
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Reactjs
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Hexo
+                </h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Tailwind CSS
+                </h5>
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a target="_blank" rel="noreferrer" href="https://aufrestcountriesapi.netlify.app">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://automateintel.ai"
+                >
+                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                    <span>Live</span>
+                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </motion.article>
+          <motion.article
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.93 }}
+            transition={{ ease: "easeInOut" }}
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+          >
+            <img
+              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px]  justify-self-center rounded  rounded-b-none"
+              src={dera}
+              alt="comment section"
+            />
+
+            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
+              <h3 className="font-bold text-lg">Dera</h3>
+              <p className="leading-[150%] text-left">
+                A Web 3.0 platform for making interest-bearing payment
+                currencies the standard.
+              </p>
+              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                {" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Next.js
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Tailwind
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Ghost CMS
+                </h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Ethers.js
+                </h5>
+              </div>
+              <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                <a target="_blank" rel="noreferrer" href="https://dera.money">
+                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                    <span>Live</span>
+                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </motion.article>
+          <motion.article
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.93 }}
+            transition={{ ease: "easeInOut" }}
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+          >
+            <img
+              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px]    justify-self-center rounded rounded-b-none"
+              src={IpTrackerImg}
+              alt="ip address tracker"
+            />
+
+            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
+              <h3 className="font-bold text-lg">IP Address Tracker</h3>
+              <p className="leading-[150%] text-left">
+                A websites that detects, display location details and a map via
+                the ip-address using the{" "}
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://ipwho.is"
+                  className="underline"
+                >
+                  Ipwhois
+                </a>
+                &nbsp; api
+              </p>
+              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                {" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Reactjs
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Tailwind CSS
+                </h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Ipwho.is api
+                </h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  react-leaflet
+                </h5>
+              </div>
+              <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://ip-address-tracker-auf.netlify.app/"
+                >
                   <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
                     <span>Live</span>
                     <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
@@ -152,7 +273,7 @@ export const Projects = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/Simplyauf/REST-Countries-API-with-Framer-motion "
+                  href="https://github.com/Simplyauf/IP-ADDRESS-TRACKER-REACTJS"
                 >
                   <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
                     <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
@@ -170,30 +291,53 @@ export const Projects = () => {
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.93 }}
             transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
-              className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
-              src={spaceApiImg}
-              alt="space-data"
+              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px]  justify-self-center rounded  rounded-b-none"
+              src={kito}
+              alt="restcountries"
             />
 
             <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">Space tourism multipage</h3>
-              <p className="leading-[150%] text-left">A multipage web app dynamically populated with json data</p>
+              <h3 className="font-bold text-lg">Questionaire Platform</h3>
+              <p className="leading-[150%] text-left">
+                A Fullstack web platform for creating, sharing and questionaire
+              </p>
               <div className="flex gap-2 font-medium text-[20px] flex-wrap">
                 {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Express.js
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Mongoose.js
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  HTML
+                </h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Passport.js
+                </h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Tailwind CSS
+                </h5>
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a target="_blank" rel="noreferrer" href="https://space-tourism-multipage-react.netlify.app/">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://questionaire-platform.vercel.app"
+                >
                   <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
                     <span>Live</span>
                     <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
                   </button>
                 </a>
-                <a target="_blank" rel="noreferrer" href="https://github.com/Simplyauf/space-tourism-multipage-reactjs">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Simplyauf/Kito-questionaire"
+                >
                   <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
                     <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
                     <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
@@ -213,25 +357,46 @@ export const Projects = () => {
             className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
-              className="max-w-full w-auto h-auto  justify-self-center rounded  rounded-b-none"
-              src={project3_commentSection}
-              alt="comment section"
+              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px]  justify-self-center rounded  rounded-b-none"
+              src={project2_Countries}
+              alt="restcountries"
             />
 
             <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">Interactive Comment section</h3>
+              <h3 className="font-bold text-lg">
+                Countries data with theme toggler
+              </h3>
               <p className="leading-[150%] text-left">
-                An interactive comment section which posesses ability to upvotes & downvotes posts,send posts,delete
-                posts,track posts time and also sort posts based on votes.
+                A websites that displays countries data using &nbsp;
+                <a
+                  rel="noreferrer"
+                  className="underline"
+                  target="_blank"
+                  href="https://restcountries.com"
+                >
+                  restcountries
+                </a>
+                &nbsp; api, possesing features like searching, sorting and
+                filtering.
               </p>
               <div className="flex gap-2 font-medium text-[20px] flex-wrap">
                 {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">React context</h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Reactjs</h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">Tailwind CSS</h5>
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Redux toolkit
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Reactjs
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Tailwind CSS
+                </h5>
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a target="_blank" rel="noreferrer" href="https://interactive-comment-section-auf.netlify.app/">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://aufrestcountriesapi.netlify.app"
+                >
                   <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
                     <span>Live</span>
                     <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
@@ -240,7 +405,7 @@ export const Projects = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/Simplyauf/interactive-comment-section-reactJS"
+                  href="https://github.com/Simplyauf/REST-Countries-API-with-Framer-motion "
                 >
                   <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
                     <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
