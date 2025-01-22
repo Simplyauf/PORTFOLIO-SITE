@@ -63,7 +63,7 @@ export const AboutMe = () => {
           allows me to deliver high-quality results consistently. If you an
           exciting opportunity available, please do not hesitate to contact me.
         </motion.p>
-        <motion.div
+        {/* <motion.div
           variants={fadeOutMoveUpVariants}
           initial="initial"
           whileInView="animate"
@@ -156,7 +156,7 @@ export const AboutMe = () => {
               </ul>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
         <a
           target="_blank"
           rel="noreferrer"

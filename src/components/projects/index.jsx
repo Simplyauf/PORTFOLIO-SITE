@@ -9,6 +9,9 @@ import updatestack from "../../assets/updatestack-img.png";
 import dera from "../../assets/dera-img.png";
 import kito from "../../assets/questionaire-img.png";
 import automateintel from "../../assets/automateintel.png";
+import coinchord from "../../assets/coinchord.png";
+import wssu from "../../assets/wssu.png";
+import aiIdea from "../../assets/aiIdea.png";
 
 export const Projects = () => {
   return (
@@ -79,6 +82,58 @@ export const Projects = () => {
                       Code
                     </span>
                     <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </motion.article>
+          <motion.article
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.93 }}
+            transition={{ ease: "easeInOut" }}
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+          >
+            <img
+              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none"
+              src={coinchord}
+              alt="auffur"
+            />
+
+            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
+              <h3 className="font-bold text-lg">Coinchord</h3>
+              <p className="leading-[150%] text-left">
+                Make Tax payment with valid SIN number,stripe payment
+                gateway,crypto payment,Request for refunds aaaand other custom
+                support integrated with Hubspot Crm,Live Chat Hubspot Crm,Admin
+                portals and Super Admins to manage the users
+              </p>
+              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                {" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Reactjs
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Hubspot CRM
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Stripe Payment Gateway
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  React Context
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Tailwind CSS
+                </h5>
+              </div>
+              <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://coinchord.manaknightdigital.com/user/login"
+                >
+                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                    <span>Live</span>
+                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
                   </button>
                 </a>
               </div>
@@ -174,6 +229,7 @@ export const Projects = () => {
               </div>
             </div>
           </motion.article>
+
           <motion.article
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.93 }}
@@ -209,6 +265,49 @@ export const Projects = () => {
               </div>
               <div className="flex gap-4 mt-7 w-full justify-between items-center">
                 <a target="_blank" rel="noreferrer" href="https://dera.money">
+                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                    <span>Live</span>
+                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </motion.article>
+          <motion.article
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.93 }}
+            transition={{ ease: "easeInOut" }}
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+          >
+            <img
+              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none"
+              src={wssu}
+              alt="auffur"
+            />
+
+            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
+              <h3 className="font-bold text-lg">
+                Winston Salem University Application
+              </h3>
+              <p className="leading-[150%] text-left">
+                A web application for managing and tracking the progress of
+                students application in a university.
+              </p>
+              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                {" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Reactjs
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Tailwind CSS
+                </h5>
+              </div>
+              <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://wssu.manaknightdigital.com/user/login"
+                >
                   <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
                     <span>Live</span>
                     <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
@@ -294,6 +393,66 @@ export const Projects = () => {
             className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
           >
             <img
+              className="object-contain 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none"
+              src={aiIdea}
+              alt="auffur"
+            />
+
+            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
+              <h3 className="font-bold text-lg">AI Idea Generator</h3>
+              <p className="leading-[150%] text-left">
+                An AI idea Generator that allows to save ideas from chat
+              </p>
+              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                {" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Reactjs
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Gemini AI KEYs
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Express.js
+                </h5>{" "}
+                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                  Tailwind CSS
+                </h5>
+              </div>
+              <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://ai-idea-generator-three.vercel.app/"
+                >
+                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                    <span>Live</span>
+                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                  </button>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Simplyauf/AI-IDEA-GENERATOR"
+                >
+                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                      {" "}
+                      Code
+                    </span>
+                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </motion.article>
+          <motion.article
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.93 }}
+            transition={{ ease: "easeInOut" }}
+            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+          >
+            <img
               className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px]  justify-self-center rounded  rounded-b-none"
               src={kito}
               alt="restcountries"
@@ -326,7 +485,7 @@ export const Projects = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://questionaire-platform.vercel.app"
+                  href="https://kito-questionaire.vercel.app"
                 >
                   <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
                     <span>Live</span>
