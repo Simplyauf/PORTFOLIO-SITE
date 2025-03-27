@@ -21,8 +21,8 @@ import {
   SiJenkins,
   SiCypress,
   SiJest,
-  SiShopifyhydrogen,
 } from "react-icons/si";
+
 import { motion } from "framer-motion";
 
 export const Skills = () => {
@@ -71,10 +71,7 @@ export const Skills = () => {
     Jenkins: [<SiJenkins key="jenkins" className="w-14 h-14 " />, "#D24939"],
     Cypress: [<SiCypress key="cypress" className="w-14 h-14 " />, "#17202C"],
     Jest: [<SiJest key="jest" className="w-14 h-14 " />, "#C21325"],
-    Hydrogen: [
-      <SiShopifyhydrogen key="hydrogen" className="w-14 h-14 " />,
-      "#000000",
-    ],
+    Hydrogen: [<SiShopify key="hydrogen" className="w-14 h-14 " />, "#000000"],
   };
 
   // single skill box
