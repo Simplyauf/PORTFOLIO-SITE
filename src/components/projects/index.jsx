@@ -1,17 +1,118 @@
 import { motion } from "framer-motion";
 import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 import { RiGithubFill } from "react-icons/ri";
-import project1_auffur from "../../assets/auffur.png";
-import project2_Countries from "../../assets/rest_countries.png";
 import project3_commentSection from "../../assets/comment_section.png";
-import IpTrackerImg from "../../assets/Ip-tracker.png";
 import updatestack from "../../assets/updatestack-img.png";
 import dera from "../../assets/dera-img.png";
-import kito from "../../assets/questionaire-img.png";
+import kito from "../../assets/kito.png";
 import automateintel from "../../assets/automateintel.png";
 import coinchord from "../../assets/coinchord.png";
 import wssu from "../../assets/wssu.png";
 import aiIdea from "../../assets/aiIdea.png";
+import encryptusImg from "../../assets/ENCRYPTUS.png";
+import dream2movieImg from "../../assets/DREAM2MOVIE.png";
+import longtermhireImg from "../../assets/LONGTERMHIRE.png";
+import equalityRecordsImg from "../../assets/equalityrecords.png";
+import eventParkImg from "../../assets/eventpark.png";
+
+const projectsData = [
+  {
+    title: "Encryptus",
+    description:
+      "A fintech platform specialized in crypto on-ramps and off-ramps, integrated with Fireblocks for secure custody, Ethers.js for blockchain interactions, Sumsub for KYC/AML compliance, and built with a Nest.js backend.",
+    image: encryptusImg,
+    liveLink: "https://encryptus.io/",
+    techStack: ["Nest.js", "Fireblocks", "Ethers.js", "Sumsub", "Typescript", "Tailwind CSS"],
+    isFirst: true,
+  },
+  {
+    title: "Dream2Movie",
+    description:
+      "An innovative AI-powered mobile app where users record their dreams in a diary and transform them into AI-generated videos. Built with React Native (Expo) and Express.js, deployed on both iOS and Android platforms.",
+    image: dream2movieImg,
+    liveLink: "https://play.google.com/store/apps/details?id=com.dream2movie.app&hl=en-US&ah=WylOCFSkDChW6yztnslHo121gxQ",
+    techStack: ["React Native", "Expo", "Express.js", "Groq", "FastAPI"],
+  },
+   {
+    title: "Updatestack",
+    description:
+      "A multiportal web application for automating and sharing updates between stakeholders, investors, and companies.",
+    image: updatestack,
+    liveLink: "https://updatestack.com/",
+    techStack: ["Reactjs", "Hexo", "Tailwind CSS","Nodejs","Plaid"],
+  },
+  {
+    title: "LongTermHire",
+    description:
+      "A comprehensive equipment rental management platform that streamlines the hiring process, integrating QuickBooks for seamless financial management and accounting.",
+    image: longtermhireImg,
+    liveLink: "https://www.longtermhire.com/login/",
+    techStack: ["Reactjs", "Node.js", "Quickbooks API", "Express", "Tailwind CSS"],
+  },
+  {
+    title: "Equality Records",
+    description:
+      "A music production management application featuring distinct portals for member.cheereq.com, manager.cheereq.com, client.cheereq.com, and admin.cheereq.com. Facilitates seamless project management and collaboration among artists, engineers, and writers.",
+    image: equalityRecordsImg,
+    liveLink: "https://cheereq.com/",
+    techStack: ["Reactjs", "Node.js", "Tailwind CSS", "Express", "MySQL"],
+  },
+  {
+    title: "EventPark",
+    description:
+      "A comprehensive event planning application designed for seamless event management and organization across Africa.",
+    image: eventParkImg,
+    liveLink: "https://www.eventpark.africa/",
+    techStack: ["Reactjs", "Vite", "Tailwind CSS", "Node.js"],
+  },
+  {
+    title: "Coinchord",
+    description:
+      "Make Tax payment with valid SIN number,stripe payment gateway,crypto payment,Request for refunds and other custom support integrated with Hubspot CRM, Live Chat, Admin portals and Super Admins.",
+    image: coinchord,
+    liveLink: "https://coinchord.manaknightdigital.com/user/login",
+    techStack: ["Reactjs", "Hubspot CRM", "Stripe Payment Gateway", "React Context", "Tailwind CSS"],
+  },
+  {
+    title: "Dera",
+    description:
+      "A Web 3.0 platform for making interest-bearing payment currencies the standard, focusing on decentralized finance solutions.",
+    image: dera,
+    liveLink: "https://dera.money",
+    techStack: ["Next.js", "Tailwind", "Ghost CMS", "Ethers.js"],
+  },
+ 
+  {
+    title: "AutomateIntel",
+    description: "Various AI solutions tailored for businesses to optimize their operations and decision-making processes.",
+    image: automateintel,
+    liveLink: "https://automateintel.ai",
+    techStack: ["Reactjs", "React Context", "Hexo", "Tailwind CSS","Twilio"],
+  },
+  {
+    title: "Winston Salem University Application",
+    description: "A web application for managing and tracking the progress of students applications in a university ecosystem.",
+    image: wssu,
+    liveLink: "https://dashboard.winstonsalemteach.com/user/login",
+    techStack: ["Reactjs", "Tailwind CSS"],
+  },
+  {
+    title: "AI Idea Generator",
+    description: "An AI tool that generates creative project ideas and allows users to save them directly from the chat interface.",
+    image: aiIdea,
+    liveLink: "https://ai-idea-generator-three.vercel.app/",
+    githubLink: "https://github.com/Simplyauf/AI-IDEA-GENERATOR",
+    techStack: ["Reactjs", "Gemini AI", "Express.js", "Tailwind CSS"],
+  },
+  {
+    title: "Questionaire Platform",
+    description: "A full-stack web platform for creating, sharing, and managing questionnaires with advanced user authentication.",
+    image: kito,
+    liveLink: "https://kito-questionaire.vercel.app",
+    githubLink: "https://github.com/Simplyauf/Kito-questionaire",
+    techStack: ["Express.js", "Mongoose.js", "Passport.js", "Tailwind CSS"],
+  },
+];
 
 export const Projects = () => {
   return (
@@ -23,561 +124,54 @@ export const Projects = () => {
         <h2 className="font-bold text-2xl ">My Projects</h2>
         <div className=" bg-primaryColor -skew-x-6  h-[10px] mt-[4px] w-[60px]"></div>
         <div className="flex flex-wrap flex-col md:flex-row mt-16 gap-6 items-center md:justify-center md:items-stretch lg:gap-10 2xl:gap-12">
-          <motion.article
-            whileHover={{ scale: 1.07 }}
-            whileTap={{ scale: 0.93 }}
-            transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
-          >
-            <img
-              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none"
-              src={project1_auffur}
-              alt="auffur"
-            />
+          {projectsData.map((project, index) => (
+            <motion.article
+              key={index}
+              whileHover={{ scale: 1.07 }}
+              whileTap={{ scale: 0.93 }}
+              transition={{ ease: "easeInOut" }}
+              className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
+            >
+              <img
+                className={`object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none ${
+                  project.title === "AI Idea Generator" ? "object-contain" : "object-cover"
+                }`}
+                src={project.image}
+                alt={project.title}
+              />
 
-            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">Auffur E-furniture website</h3>
-              <p className="leading-[150%] text-left">
-                A fullstack e-commerce website for furnitures which posesses
-                cart,user authentication,database management and admin system
-              </p>
-              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-                {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Mongoose
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Express
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Redux toolkit
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Reactjs
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Tailwind CSS
-                </h5>
+              <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
+                <h3 className="font-bold text-lg">{project.title}</h3>
+                <p className="leading-[150%] text-left">{project.description}</p>
+                <div className="flex gap-2 font-medium text-[20px] flex-wrap">
+                  {project.techStack.map((tech, i) => (
+                    <h5 key={i} className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
+                      {tech}
+                    </h5>
+                  ))}
+                </div>
+                <div className="flex gap-4 mt-7 w-full justify-between items-center">
+                  <a target="_blank" rel="noreferrer" href={project.liveLink}>
+                    <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                      <span>Live</span>
+                      <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                    </button>
+                  </a>
+                  {project.githubLink && (
+                    <a target="_blank" rel="noreferrer" href={project.githubLink}>
+                      <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
+                        <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
+                        <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
+                          Code
+                        </span>
+                        <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
+                      </button>
+                    </a>
+                  )}
+                </div>
               </div>
-              <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://auffur-furnishes.netlify.app/"
-                >
-                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                    <span>Live</span>
-                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/Simplyauf/Auffur-Ecommerce-furniture-website"
-                >
-                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                      {" "}
-                      Code
-                    </span>
-                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </motion.article>
-          <motion.article
-            whileHover={{ scale: 1.07 }}
-            whileTap={{ scale: 0.93 }}
-            transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
-          >
-            <img
-              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none"
-              src={coinchord}
-              alt="auffur"
-            />
-
-            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">Coinchord</h3>
-              <p className="leading-[150%] text-left">
-                Make Tax payment with valid SIN number,stripe payment
-                gateway,crypto payment,Request for refunds aaaand other custom
-                support integrated with Hubspot Crm,Live Chat Hubspot Crm,Admin
-                portals and Super Admins to manage the users
-              </p>
-              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-                {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Reactjs
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Hubspot CRM
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Stripe Payment Gateway
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  React Context
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Tailwind CSS
-                </h5>
-              </div>
-              <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://coinchord.manaknightdigital.com/user/login"
-                >
-                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                    <span>Live</span>
-                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </motion.article>
-          <motion.article
-            whileHover={{ scale: 1.07 }}
-            whileTap={{ scale: 0.93 }}
-            transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
-          >
-            <img
-              className="object-cover 2xl:min-h-[300px] max-w-full w-auto min-h-[262.5px] h-auto  justify-self-center rounded  rounded-b-none"
-              src={updatestack}
-              alt="space-data"
-            />
-
-            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">Updatestack</h3>
-              <p className="leading-[150%] text-left">
-                A multiportal web application for automating and sharing updates
-                between between stakeholders, investors, and companies.
-              </p>
-              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-                {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Reactjs
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Hexo
-                </h5>
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Tailwind CSS
-                </h5>
-              </div>
-              <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://updatestack.com/"
-                >
-                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                    <span>Live</span>
-                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </motion.article>
-          <motion.article
-            whileHover={{ scale: 1.07 }}
-            whileTap={{ scale: 0.93 }}
-            transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
-          >
-            <img
-              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded  rounded-b-none"
-              src={automateintel}
-              alt="comment section"
-            />
-
-            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">AutomateIntel</h3>
-              <p className="leading-[150%] text-left">
-                Different AI solutions for Businesses
-              </p>
-              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-                {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  React context
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Reactjs
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Hexo
-                </h5>
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Tailwind CSS
-                </h5>
-              </div>
-              <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://automateintel.ai"
-                >
-                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                    <span>Live</span>
-                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </motion.article>
-
-          <motion.article
-            whileHover={{ scale: 1.07 }}
-            whileTap={{ scale: 0.93 }}
-            transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
-          >
-            <img
-              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px]  justify-self-center rounded  rounded-b-none"
-              src={dera}
-              alt="comment section"
-            />
-
-            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">Dera</h3>
-              <p className="leading-[150%] text-left">
-                A Web 3.0 platform for making interest-bearing payment
-                currencies the standard.
-              </p>
-              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-                {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Next.js
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Tailwind
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Ghost CMS
-                </h5>
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Ethers.js
-                </h5>
-              </div>
-              <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a target="_blank" rel="noreferrer" href="https://dera.money">
-                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                    <span>Live</span>
-                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </motion.article>
-          <motion.article
-            whileHover={{ scale: 1.07 }}
-            whileTap={{ scale: 0.93 }}
-            transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
-          >
-            <img
-              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none"
-              src={wssu}
-              alt="auffur"
-            />
-
-            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">
-                Winston Salem University Application
-              </h3>
-              <p className="leading-[150%] text-left">
-                A web application for managing and tracking the progress of
-                students application in a university.
-              </p>
-              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-                {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Reactjs
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Tailwind CSS
-                </h5>
-              </div>
-              <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://wssu.manaknightdigital.com/user/login"
-                >
-                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                    <span>Live</span>
-                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </motion.article>
-          <motion.article
-            whileHover={{ scale: 1.07 }}
-            whileTap={{ scale: 0.93 }}
-            transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
-          >
-            <img
-              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px]    justify-self-center rounded rounded-b-none"
-              src={IpTrackerImg}
-              alt="ip address tracker"
-            />
-
-            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">IP Address Tracker</h3>
-              <p className="leading-[150%] text-left">
-                A websites that detects, display location details and a map via
-                the ip-address using the{" "}
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://ipwho.is"
-                  className="underline"
-                >
-                  Ipwhois
-                </a>
-                &nbsp; api
-              </p>
-              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-                {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Reactjs
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Tailwind CSS
-                </h5>
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Ipwho.is api
-                </h5>
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  react-leaflet
-                </h5>
-              </div>
-              <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://ip-address-tracker-auf.netlify.app/"
-                >
-                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                    <span>Live</span>
-                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/Simplyauf/IP-ADDRESS-TRACKER-REACTJS"
-                >
-                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                      {" "}
-                      Code
-                    </span>
-                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </motion.article>
-          <motion.article
-            whileHover={{ scale: 1.07 }}
-            whileTap={{ scale: 0.93 }}
-            transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
-          >
-            <img
-              className="object-contain 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none"
-              src={aiIdea}
-              alt="auffur"
-            />
-
-            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">AI Idea Generator</h3>
-              <p className="leading-[150%] text-left">
-                An AI idea Generator that allows to save ideas from chat
-              </p>
-              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-                {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Reactjs
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Gemini AI KEYs
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Express.js
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Tailwind CSS
-                </h5>
-              </div>
-              <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://ai-idea-generator-three.vercel.app/"
-                >
-                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                    <span>Live</span>
-                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/Simplyauf/AI-IDEA-GENERATOR"
-                >
-                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                      {" "}
-                      Code
-                    </span>
-                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </motion.article>
-          <motion.article
-            whileHover={{ scale: 1.07 }}
-            whileTap={{ scale: 0.93 }}
-            transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
-          >
-            <img
-              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px]  justify-self-center rounded  rounded-b-none"
-              src={kito}
-              alt="restcountries"
-            />
-
-            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">Questionaire Platform</h3>
-              <p className="leading-[150%] text-left">
-                A Fullstack web platform for creating, sharing and questionaire
-              </p>
-              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-                {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Express.js
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Mongoose.js
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  HTML
-                </h5>
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Passport.js
-                </h5>
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Tailwind CSS
-                </h5>
-              </div>
-              <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://kito-questionaire.vercel.app"
-                >
-                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                    <span>Live</span>
-                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/Simplyauf/Kito-questionaire"
-                >
-                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                      {" "}
-                      Code
-                    </span>
-                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </motion.article>
-          <motion.article
-            whileHover={{ scale: 1.07 }}
-            whileTap={{ scale: 0.93 }}
-            transition={{ ease: "easeInOut" }}
-            className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
-          >
-            <img
-              className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px]  justify-self-center rounded  rounded-b-none"
-              src={project2_Countries}
-              alt="restcountries"
-            />
-
-            <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
-              <h3 className="font-bold text-lg">
-                Countries data with theme toggler
-              </h3>
-              <p className="leading-[150%] text-left">
-                A websites that displays countries data using &nbsp;
-                <a
-                  rel="noreferrer"
-                  className="underline"
-                  target="_blank"
-                  href="https://restcountries.com"
-                >
-                  restcountries
-                </a>
-                &nbsp; api, possesing features like searching, sorting and
-                filtering.
-              </p>
-              <div className="flex gap-2 font-medium text-[20px] flex-wrap">
-                {" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Redux toolkit
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Reactjs
-                </h5>{" "}
-                <h5 className="p-1 font-medium text-sm bg-[#3c4248] rounded text-white">
-                  Tailwind CSS
-                </h5>
-              </div>
-              <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://aufrestcountriesapi.netlify.app"
-                >
-                  <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                    <span>Live</span>
-                    <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                  </button>
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/Simplyauf/REST-Countries-API-with-Framer-motion "
-                >
-                  <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
-                    <span className="absolute w-64 h-0  transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-primaryColor text-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease-in-out"></span>
-                    <span className="relative text-primaryColor transition-colors duration-300 group-hover:text-white ease-in-out">
-                      {" "}
-                      Code
-                    </span>
-                    <RiGithubFill className="w-5 h-5 fill-primaryColor relative transition-colors duration-300 group-hover:fill-white ease-in-out" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </motion.article>
+            </motion.article>
+          ))}
         </div>
       </div>
     </section>

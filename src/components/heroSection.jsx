@@ -131,7 +131,7 @@ const HeroSection = () => {
           variants={expandAndFadeOutTextVariant}
           className="text-[3rem] md:text-[3.5rem] xl:text-[4rem] md:leading-[130%]  text-center leading-[120%] font-bold "
         >
-          Azeez Umar Faruq
+          Abdulazeez Umarfaruq
         </motion.h1>
         <motion.h3
           ref={refGradient}
@@ -140,7 +140,7 @@ const HeroSection = () => {
           variants={gradientVariants}
           className="text-2xl md:text-3xl xl:text-4xl mt-7 font-bold gradientText "
         >
-          Frontend Developer
+          Software Engineer
         </motion.h3>
         <motion.p
           ref={refFadeOut}
