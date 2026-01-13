@@ -25,7 +25,6 @@ import {
   SiExpo,
   SiQuickbooks,
   SiTwilio,
-  SiPlaid,
   SiNodedotjs,
 } from "react-icons/si";
 
@@ -80,9 +79,17 @@ export const Skills = () => {
     Hydrogen: [<SiShopify key="hydrogen" className="w-14 h-14 " />, "#000000"],
     "Nest js": [<SiNestjs key="nestjs" className="w-14 h-14 " />, "#E0234E"],
     Expo: [<SiExpo key="expo" className="w-14 h-14 " />, "#000020"],
-    Quickbooks: [<SiQuickbooks key="quickbooks" className="w-14 h-14 " />, "#2CA01C"],
+    Quickbooks: [
+      <SiQuickbooks key="quickbooks" className="w-14 h-14 " />,
+      "#2CA01C",
+    ],
     Twilio: [<SiTwilio key="twilio" className="w-14 h-14 " />, "#F22F46"],
-    Plaid: [<SiPlaid key="plaid" className="w-14 h-14 " />, "#000000"],
+    Plaid: [
+      <span key="plaid" className="w-14 h-14 flex items-center justify-center">
+        Plaid
+      </span>,
+      "#000000",
+    ],
     "Node.js": [<SiNodedotjs key="nodejs" className="w-14 h-14 " />, "#339933"],
   };
 
