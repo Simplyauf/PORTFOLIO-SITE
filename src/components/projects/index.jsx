@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 import { RiGithubFill } from "react-icons/ri";
+import outdocs from "../../assets/outdocs.png";
+import stackeasy from "../../assets/stackeasy.jpeg";
 import project3_commentSection from "../../assets/comment_section.png";
 import updatestack from "../../assets/updatestack-img.png";
 import dera from "../../assets/dera-img.png";
@@ -17,6 +19,22 @@ import eventParkImg from "../../assets/eventpark.png";
 
 const projectsData = [
   {
+    title: "OutDocs",
+    description:
+      "An interactive intelligence engine that transforms meeting notes, articles, and research papers into source-grounded answers powered by RAG (Retrieval-Augmented Generation).",
+    image: outdocs,
+    liveLink: "https://outdocs.xyz/",
+    techStack: ["LangChain v0.3", "Vector Embeddings", "RAG", "AI"],
+  },
+  {
+    title: "StackEasy",
+    description:
+      "A comprehensive credit stacking platform to manage cards, limits, and benefits in one place, featuring AI-powered insights and real-time dashboard analytics.",
+    image: stackeasy,
+    liveLink: "https://stackeasy.ai/",
+    techStack: ["Reactjs", "Node.js", "MX API", "AI Insights", "Tailwind CSS"],
+  },
+  {
     title: "Encryptus",
     description:
       "A fintech platform specialized in crypto on-ramps and off-ramps, integrated with Fireblocks for secure custody, Ethers.js for blockchain interactions, Sumsub for KYC/AML compliance, and built with a Nest.js backend.",
@@ -32,14 +50,6 @@ const projectsData = [
     image: dream2movieImg,
     liveLink: "https://play.google.com/store/apps/details?id=com.dream2movie.app&hl=en-US&ah=WylOCFSkDChW6yztnslHo121gxQ",
     techStack: ["React Native", "Expo", "Express.js", "Groq", "FastAPI"],
-  },
-   {
-    title: "Updatestack",
-    description:
-      "A multiportal web application for automating and sharing updates between stakeholders, investors, and companies.",
-    image: updatestack,
-    liveLink: "https://updatestack.com/",
-    techStack: ["Reactjs", "Hexo", "Tailwind CSS","Nodejs","Plaid"],
   },
   {
     title: "LongTermHire",
@@ -66,14 +76,6 @@ const projectsData = [
     techStack: ["Reactjs", "Vite", "Tailwind CSS", "Node.js"],
   },
   {
-    title: "Coinchord",
-    description:
-      "Make Tax payment with valid SIN number,stripe payment gateway,crypto payment,Request for refunds and other custom support integrated with Hubspot CRM, Live Chat, Admin portals and Super Admins.",
-    image: coinchord,
-    liveLink: "https://coinchord.manaknightdigital.com/user/login",
-    techStack: ["Reactjs", "Hubspot CRM", "Stripe Payment Gateway", "React Context", "Tailwind CSS"],
-  },
-  {
     title: "Dera",
     description:
       "A Web 3.0 platform for making interest-bearing payment currencies the standard, focusing on decentralized finance solutions.",
@@ -81,7 +83,6 @@ const projectsData = [
     liveLink: "https://dera.money",
     techStack: ["Next.js", "Tailwind", "Ghost CMS", "Ethers.js"],
   },
- 
   {
     title: "AutomateIntel",
     description: "Various AI solutions tailored for businesses to optimize their operations and decision-making processes.",
@@ -111,6 +112,22 @@ const projectsData = [
     liveLink: "https://kito-questionaire.vercel.app",
     githubLink: "https://github.com/Simplyauf/Kito-questionaire",
     techStack: ["Express.js", "Mongoose.js", "Passport.js", "Tailwind CSS"],
+  },
+  {
+    title: "Coinchord",
+    description:
+      "Make Tax payment with valid SIN number,stripe payment gateway,crypto payment,Request for refunds and other custom support integrated with Hubspot CRM, Live Chat, Admin portals and Super Admins.",
+    image: coinchord,
+    liveLink: "https://coinchord.manaknightdigital.com/user/login",
+    techStack: ["Reactjs", "Hubspot CRM", "Stripe Payment Gateway", "React Context", "Tailwind CSS"],
+  },
+  {
+    title: "Updatestack",
+    description:
+      "A multiportal web application for automating and sharing updates between stakeholders, investors, and companies.",
+    image: updatestack,
+    liveLink: "https://updatestack.com/",
+    techStack: ["Reactjs", "Hexo", "Tailwind CSS","Nodejs","Plaid"],
   },
 ];
 
