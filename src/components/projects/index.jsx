@@ -80,7 +80,7 @@ const projectsData = [
       "A modern remittance platform enabling fast, transparent, and compliant digital money transfers from the U.S. to India and beyond — featuring live exchange rates, zero transfer fees, and within-minutes delivery.",
     image: globalrupeeImg,
     liveLink: "https://globalrupeepay.com/",
-    techStack: ["Reactjs", "Node.js", "Tailwind CSS", "Fintech API"],
+    techStack: ["Reactjs", "Node.js", "Tailwind CSS", "Nium API"],
   },
   {
     title: "Dera",
