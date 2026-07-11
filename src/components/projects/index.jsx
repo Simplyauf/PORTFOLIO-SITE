@@ -6,16 +6,15 @@ import stackeasy from "../../assets/stackeasy.jpeg";
 import project3_commentSection from "../../assets/comment_section.png";
 import updatestack from "../../assets/updatestack-img.png";
 import dera from "../../assets/dera-img.png";
-import kito from "../../assets/kito.png";
 import automateintel from "../../assets/automateintel.png";
 import coinchord from "../../assets/coinchord.png";
 import wssu from "../../assets/wssu.png";
-import aiIdea from "../../assets/aiIdea.png";
 import encryptusImg from "../../assets/ENCRYPTUS.png";
 import dream2movieImg from "../../assets/DREAM2MOVIE.png";
 import longtermhireImg from "../../assets/LONGTERMHIRE.png";
 import equalityRecordsImg from "../../assets/equalityrecords.png";
 import eventParkImg from "../../assets/eventpark.png";
+import globalrupeeImg from "../../assets/globalrupee.jpeg";
 
 const projectsData = [
   {
@@ -72,23 +71,40 @@ const projectsData = [
     description:
       "A comprehensive event planning application designed for seamless event management and organization across Africa.",
     image: eventParkImg,
-    liveLink: "https://www.eventpark.africa/",
+    liveLink: "https://www.linkedin.com/company/eventpark-ltd",
     techStack: ["Reactjs", "Vite", "Tailwind CSS", "Node.js"],
+  },
+  {
+    title: "GlobalRupee Pay",
+    description:
+      "A modern remittance platform enabling fast, transparent, and compliant digital money transfers from the U.S. to India and beyond — featuring live exchange rates, zero transfer fees, and within-minutes delivery.",
+    image: globalrupeeImg,
+    liveLink: "https://globalrupeepay.com/",
+    techStack: ["Reactjs", "Node.js", "Tailwind CSS", "Fintech API"],
   },
   {
     title: "Dera",
     description:
       "A Web 3.0 platform for making interest-bearing payment currencies the standard, focusing on decentralized finance solutions.",
     image: dera,
-    liveLink: "https://dera.money",
+    liveLink: "https://derafi.io/",
     techStack: ["Next.js", "Tailwind", "Ghost CMS", "Ethers.js"],
   },
   {
     title: "AutomateIntel",
-    description: "Various AI solutions tailored for businesses to optimize their operations and decision-making processes.",
+    description:
+      "An AI-powered Omnichannel Marketing and Automation SaaS platform for businesses — automating outreach and customer engagement across AI voice calls (inbound & outbound), SMS flows, email campaigns, and source-grounded website chatbots, unified through a multi-channel workflow engine.",
     image: automateintel,
-    liveLink: "https://automateintel.ai",
-    techStack: ["Reactjs", "React Context", "Hexo", "Tailwind CSS","Twilio"],
+    liveLink: "https://voice.automateintel.ai/user/login",
+    techStack: ["Reactjs", "React Context", "Hexo", "Tailwind CSS", "Twilio"],
+  },
+  {
+    title: "Weritas",
+    description:
+      "A Web5-enabled institutional digital infrastructure platform that connects identity, intelligence, and programmable settlement into a unified system — enabling structured, scalable, and compliant participation across modern financial systems through its identity, intelligence, access, and settlement layers.",
+    image: null,
+    liveLink: "https://weritas.io/",
+    techStack: ["Web5", "Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
     title: "Winston Salem University Application",
@@ -98,27 +114,10 @@ const projectsData = [
     techStack: ["Reactjs", "Tailwind CSS"],
   },
   {
-    title: "AI Idea Generator",
-    description: "An AI tool that generates creative project ideas and allows users to save them directly from the chat interface.",
-    image: aiIdea,
-    liveLink: "https://ai-idea-generator-three.vercel.app/",
-    githubLink: "https://github.com/Simplyauf/AI-IDEA-GENERATOR",
-    techStack: ["Reactjs", "Gemini AI", "Express.js", "Tailwind CSS"],
-  },
-  {
-    title: "Questionaire Platform",
-    description: "A full-stack web platform for creating, sharing, and managing questionnaires with advanced user authentication.",
-    image: kito,
-    liveLink: "https://kito-questionaire.vercel.app",
-    githubLink: "https://github.com/Simplyauf/Kito-questionaire",
-    techStack: ["Express.js", "Mongoose.js", "Passport.js", "Tailwind CSS"],
-  },
-  {
     title: "Coinchord",
     description:
       "Make Tax payment with valid SIN number,stripe payment gateway,crypto payment,Request for refunds and other custom support integrated with Hubspot CRM, Live Chat, Admin portals and Super Admins.",
     image: coinchord,
-    liveLink: "https://coinchord.manaknightdigital.com/user/login",
     techStack: ["Reactjs", "Hubspot CRM", "Stripe Payment Gateway", "React Context", "Tailwind CSS"],
   },
   {
@@ -126,7 +125,6 @@ const projectsData = [
     description:
       "A multiportal web application for automating and sharing updates between stakeholders, investors, and companies.",
     image: updatestack,
-    liveLink: "https://updatestack.com/",
     techStack: ["Reactjs", "Hexo", "Tailwind CSS","Nodejs","Plaid"],
   },
 ];
@@ -149,13 +147,17 @@ export const Projects = () => {
               transition={{ ease: "easeInOut" }}
               className="w-full cursor-pointer max-w-[350px] xl: 2xl:max-w-[400px]  3xl:max-w-[450px] flex flex-col   rounded-md bg-white   shadow-[2px_2px_6px_-2px] shadow-[hsl(0,0%,80%)]"
             >
-              <img
-                className={`object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none ${
-                  project.title === "AI Idea Generator" ? "object-contain" : "object-cover"
-                }`}
-                src={project.image}
-                alt={project.title}
-              />
+              {project.image ? (
+                <img
+                  className="object-cover 2xl:min-h-[300px] max-w-full w-auto h-auto min-h-[262.5px] justify-self-center rounded rounded-b-none"
+                  src={project.image}
+                  alt={project.title}
+                />
+              ) : (
+                <div className="min-h-[262.5px] 2xl:min-h-[300px] bg-gray-100 flex items-center justify-center rounded rounded-b-none">
+                  <span className="text-gray-400 font-semibold text-lg">{project.title}</span>
+                </div>
+              )}
 
               <div className="justify-evenly p-8  flex grow flex-col gap-4 ">
                 <h3 className="font-bold text-lg">{project.title}</h3>
@@ -168,12 +170,14 @@ export const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-4 mt-7 w-full justify-between items-center">
-                  <a target="_blank" rel="noreferrer" href={project.liveLink}>
-                    <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
-                      <span>Live</span>
-                      <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
-                    </button>
-                  </a>
+                  {project.liveLink && (
+                    <a target="_blank" rel="noreferrer" href={project.liveLink}>
+                      <button className="h-12 w-[120px] bg-primaryColor text-white flex justify-center items-center gap-4 rounded shadow-sm  hover:bg-[hsl(0deg,87%,65%)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[hsl(0deg,87%,75%)]">
+                        <span>Live</span>
+                        <HiOutlineArrowTopRightOnSquare className="w-5 h-5 stroke-white" />
+                      </button>
+                    </a>
+                  )}
                   {project.githubLink && (
                     <a target="_blank" rel="noreferrer" href={project.githubLink}>
                       <button className="h-12 w-[120px] group  relative bg-transparent border-primaryColor border-2 flex items-center justify-center gap-4 overflow-hidden  rounded">
