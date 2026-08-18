@@ -30,7 +30,7 @@ const projectsData = [
     description:
       "A comprehensive credit stacking platform to manage cards, limits, and benefits in one place, featuring AI-powered insights and real-time dashboard analytics.",
     image: stackeasy,
-    liveLink: "https://stackeasy.ai/",
+    liveLink: "https://www.stackeasy.ai/",
     techStack: ["Reactjs", "Node.js", "MX API", "AI Insights", "Tailwind CSS"],
   },
   {
@@ -87,7 +87,7 @@ const projectsData = [
     description:
       "A Web 3.0 platform for making interest-bearing payment currencies the standard, focusing on decentralized finance solutions.",
     image: dera,
-    liveLink: "https://derafi.io/",
+    // liveLink: "https://derafi.io/",
     techStack: ["Next.js", "Tailwind", "Ghost CMS", "Ethers.js"],
   },
   {
