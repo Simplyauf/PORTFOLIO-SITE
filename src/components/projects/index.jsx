@@ -127,6 +127,13 @@ const projectsData = [
     image: updatestack,
     techStack: ["Reactjs", "Hexo", "Tailwind CSS","Nodejs","Plaid"],
   },
+  {
+    title: "Legiteem8",
+    description:
+      "A vintage T-shirt verification platform and marketplace that combines community and expert authentication with computer vision, minting each verified item as an NFT to guarantee provenance. Built an expert authentication network and grew a community of 30,000 users.",
+    image: "/legiteem8-banner.webp",
+    techStack: ["Swift", "Kotlin", "Node", "Smart Contract", "Moralis", "Computer Vision"],
+  },
 ];
 
 export const Projects = () => {
