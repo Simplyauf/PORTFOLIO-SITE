@@ -125,6 +125,7 @@ const projectsData = [
     description:
       "A multiportal web application for automating and sharing updates between stakeholders, investors, and companies.",
     image: updatestack,
+    liveLink: "https://updatestack-01.netlify.app",
     techStack: ["Reactjs", "Hexo", "Tailwind CSS","Nodejs","Plaid"],
   },
   {
