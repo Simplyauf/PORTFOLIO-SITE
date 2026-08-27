@@ -15,6 +15,8 @@ import longtermhireImg from "../../assets/LONGTERMHIRE.png";
 import equalityRecordsImg from "../../assets/equalityrecords.png";
 import eventParkImg from "../../assets/eventpark.png";
 import globalrupeeImg from "../../assets/globalrupee.jpeg";
+import unimarketsImg from "../../assets/unimarkets.jpeg";
+import taraImg from "../../assets/tara.jpeg";
 
 const projectsData = [
   {
@@ -41,6 +43,22 @@ const projectsData = [
     liveLink: "https://encryptus.io/",
     techStack: ["Nest.js", "Fireblocks", "Ethers.js", "Sumsub", "Typescript", "Tailwind CSS"],
     isFirst: true,
+  },
+  {
+    title: "UniMarkets",
+    description:
+      "A prediction market aggregator unifying 12+ platforms including Polymarket, Kalshi, Limitless, and Jupiter into one trading experience, with wallet-based auth, account abstraction, and cross-chain support spanning EVM and Solana.",
+    image: unimarketsImg,
+    liveLink: "https://unimarkets.io/",
+    techStack: ["Next.js", "NestJS", "MongoDB", "Polymarket CLOB", "Privy", "wagmi"],
+  },
+  {
+    title: "Tara",
+    description:
+      "An AI HRMS and workforce automation platform with purpose-built AI agents for HR, finance, and project management, letting teams handle hiring, payroll, and task workflows through a chat-first interface.",
+    image: taraImg,
+    liveLink: "https://tara.nonceblox.com/",
+    techStack: ["React", "TypeScript", "Express.js", "VoltAgent", "RAG"],
   },
   {
     title: "Dream2Movie",
